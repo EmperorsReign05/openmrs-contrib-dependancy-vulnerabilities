@@ -9,48 +9,29 @@ interface Props {
 export const SeverityPill: React.FC<Props> = ({ severity }) => {
     const normalized = normalizeSeverity(severity?.toString());
 
-    let bgColor = "#f3f4f6";
-    let textColor = "#374151";
+    let severityClass = "unknown";
 
     switch (normalized) {
         case "Critical":
-            bgColor = "#f87171"; // soft red
-            textColor = "white"; // white text
+            severityClass = "crit";
             break;
         case "High":
-            bgColor = "#fce7f3"; // light pink
-            textColor = "#db2777"; // darker pink text
+            severityClass = "high";
             break;
         case "Medium":
-            bgColor = "#fef08a"; // yellow
-            textColor = "#b45309"; // amber text
+            severityClass = "medium";
             break;
         case "Low":
-            bgColor = "#f3f4f6"; // gray
-            textColor = "#4b5563"; // dark gray text
+            severityClass = "low";
             break;
         case "Unknown":
         default:
-            bgColor = "#f3f4f6";
-            textColor = "#9ca3af";
+            severityClass = "unknown";
             break;
     }
 
     return (
-        <span
-            style={{
-                backgroundColor: bgColor,
-                color: textColor,
-                padding: "0.25rem 0.625rem",
-                borderRadius: "9999px",
-                fontSize: "0.75rem",
-                fontWeight: 600,
-                display: "inline-block",
-                lineHeight: 1.25,
-                wordBreak: "keep-all",
-                whiteSpace: "nowrap"
-            }}
-        >
+        <span className={`cds--severity-pill ${severityClass}`}>
             {normalized}
         </span>
     );

@@ -1,12 +1,12 @@
 import { useMemo } from 'react';
-import './App.css';
+import './styles/carbon.scss';
 import { RepoSection } from './components/RepoSection';
 import { CveData, DependencyData, RepositoryData } from './types/vulnerability';
 import { hydrateDependency } from './utils/dependencyUtils';
 import { hydrateRepository } from './utils/repositoryUtils';
 import { sortCves, sortDependencies, sortRepositories } from './utils/sorting';
 
-// Import JSONs
+// Import JSONs (will fallback to static values if dynamic script not run)
 import openmrsCore from './data/openmrs-core.json';
 import openmrsBilling from './data/openmrs-module-billing.json';
 import openmrsIdgen from './data/openmrs-module-idgen.json';
@@ -23,7 +23,6 @@ const parseReport = (repoName: string, jsonFile: any): RepositoryData => {
     const depKey = `${depName}@${v.location?.dependency?.version || "Unknown version"}`;
 
     // Attempt to extract fields based on common structures
-    // Score might be in cvss_vectors or cvss_v3
     let score: number | undefined = undefined;
     if (v.cvss_vectors && v.cvss_vectors.length > 0) {
       score = v.cvss_vectors[0].score;
@@ -33,7 +32,6 @@ const parseReport = (repoName: string, jsonFile: any): RepositoryData => {
       score = v.score;
     }
 
-    // CWE might be under identifiers
     let cwe: string | undefined = undefined;
     if (v.identifiers && Array.isArray(v.identifiers)) {
       const cweIdentifier = v.identifiers.find((i: any) => i.type && i.type.toLowerCase() === 'cwe');
@@ -97,28 +95,24 @@ function App() {
   }, []);
 
   return (
-    <div style={{ backgroundColor: '#f9fafb', minHeight: '100vh', padding: '3rem 0' }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 2rem', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
-        <header style={{ marginBottom: '3rem' }}>
-          <h1 style={{ fontSize: '2.5rem', fontWeight: 500, color: '#111827', margin: '0 0 0.5rem 0' }}>
-            OpenMRS Dependency Vulnerability Report
-          </h1>
-          <div style={{ height: '4px', width: '64px', backgroundColor: '#0f766e', marginBottom: '1.5rem' }}></div>
-          <p style={{ color: '#4b5563', fontSize: '1rem', lineHeight: '1.6', maxWidth: '1000px', margin: 0 }}>
-            A summary of known security vulnerabilities detected across OpenMRS modules by automated dependency scanning. Each module lists its vulnerable dependencies, severity levels, and recommended fix versions to help maintainers prioritize upgrades.
-          </p>
-        </header>
+    <div className="cds--container">
+      <header className="cds--header">
+        <h1>OpenMRS Dependency Vulnerability Report</h1>
+        <div className="cds--teal-line"></div>
+        <p>
+          A summary of known security vulnerabilities detected across OpenMRS modules by automated dependency scanning. Each module lists its vulnerable dependencies, severity levels, and recommended fix versions to help maintainers prioritize upgrades.
+        </p>
+      </header>
 
-        <main>
-          {repositories.length === 0 ? (
-            <p>Loading or no data available.</p>
-          ) : (
-            repositories.map(repo => (
-              <RepoSection key={repo.name} repository={repo} />
-            ))
-          )}
-        </main>
-      </div>
+      <main>
+        {repositories.length === 0 ? (
+          <p>Loading or no data available.</p>
+        ) : (
+          repositories.map(repo => (
+            <RepoSection key={repo.name} repository={repo} />
+          ))
+        )}
+      </main>
     </div>
   );
 }

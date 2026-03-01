@@ -1,0 +1,268 @@
+$text-primary: #161616;
+$text-secondary: #525252;
+$text-helper: #a8a8a8;
+$bg-main: #f4f4f4;
+$bg-white: #ffffff;
+$border-color: #e0e0e0;
+$accent-teal: #007d79; // Carbon Teal 60
+$link-color: #0f62fe;
+$hover-gray: #e5e5e5;
+
+// Severity pills
+$sev-critical-bg: #fa4d56;
+$sev-critical-text: #ffffff;
+$sev-high-bg: #ff8389;
+$sev-high-text: #ffffff;
+$sev-medium-bg: #f1c21b;
+$sev-medium-text: #161616;
+$sev-low-bg: #e0e0e0;
+$sev-low-text: #161616;
+
+body {
+    margin: 0;
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: $bg-main;
+    color: $text-primary;
+}
+
+.cds--container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.cds--header {
+    margin-bottom: 3rem;
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 400; // Carbon uses lighter weights for large headers
+        margin: 0 0 0.5rem 0;
+        letter-spacing: -0.5px;
+    }
+
+    .cds--teal-line {
+        height: 4px;
+        width: 64px;
+        background-color: $accent-teal;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        color: $text-secondary;
+        font-size: 1rem;
+        line-height: 1.5;
+        max-width: 1000px;
+        margin: 0;
+    }
+}
+
+.cds--accordion-item {
+    background-color: $bg-white;
+    margin-bottom: 1rem;
+    // Note: Carbon accordions usually don't have heavy borders, but a bottom border. 
+    // Per mockup, there's no visible wrapper border in the list, just white sections.
+}
+
+.cds--accordion-header {
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: $hover-gray;
+    }
+
+    .cds--repo-title-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        h2 {
+            margin: 0;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+    }
+
+    .cds--chevron {
+        color: $text-secondary;
+        transition: transform 0.2s;
+
+        &.open {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.cds--dependency-list {
+    border-top: 1px solid $border-color;
+
+    .cds--grid-header {
+        background-color: $border-color;
+        padding: 0.75rem 2rem;
+        display: grid;
+        grid-template-columns: 3fr 2fr 2fr 1fr 1fr 2fr;
+        gap: 1rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: $text-primary;
+
+        .cds--sortable-col {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            user-select: none;
+
+            &:hover {
+                color: $link-color;
+            }
+
+            .cds--sort-icon {
+                font-size: 0.75rem;
+            }
+        }
+    }
+
+    .cds--dependency-rows-container {
+        background-color: $bg-white;
+    }
+}
+
+.cds--dependency-row-wrapper {
+    border-bottom: 1px solid $border-color;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.cds--dependency-row {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 1fr 1fr 2fr;
+    gap: 1rem;
+    align-items: center;
+    background-color: $bg-white;
+    transition: background-color 0.2s;
+
+    &.open {
+        background-color: $bg-main;
+        border-bottom: none;
+    }
+
+    &:hover {
+        background-color: $hover-gray;
+    }
+
+    .cds--dep-name-col {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        color: $text-secondary;
+        font-size: 0.875rem;
+        font-weight: 500;
+
+        .cds--chevron {
+            color: $text-helper;
+            transition: transform 0.2s;
+            flex-shrink: 0;
+
+            &.open {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .cds--row-text {
+        font-size: 0.875rem;
+        color: $text-secondary;
+    }
+}
+
+.cds--cve-table-wrapper {
+    background-color: $bg-main;
+    padding: 1.5rem 2rem;
+
+    // Note: For inner table per mockup, table is white with gray borders
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.875rem;
+        text-align: left;
+        background-color: $bg-white;
+        // The mockup does not show an outer rounded border for the CVE table, just plain lines
+
+        th {
+            padding: 0.75rem 1rem;
+            font-weight: 600;
+            color: $text-primary;
+            border-bottom: 1px solid $border-color;
+        }
+
+        td {
+            padding: 1rem;
+            color: $text-secondary;
+            border-bottom: 1px solid $border-color;
+            vertical-align: top;
+
+            &.cve-id {
+                color: $link-color;
+
+                a {
+                    color: inherit;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            &.cve-desc {
+                max-width: 300px;
+                line-height: 1.4;
+            }
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+    }
+}
+
+.cds--severity-pill {
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 1.25;
+    white-space: nowrap;
+
+    &.crit {
+        background-color: $sev-critical-bg;
+        color: $sev-critical-text;
+    }
+
+    &.high {
+        background-color: $sev-high-bg;
+        color: $sev-high-text;
+    }
+
+    &.medium {
+        background-color: $sev-medium-bg;
+        color: $sev-medium-text;
+    }
+
+    &.low,
+    &.unknown {
+        background-color: $sev-low-bg;
+        color: $sev-low-text;
+    }
+}
