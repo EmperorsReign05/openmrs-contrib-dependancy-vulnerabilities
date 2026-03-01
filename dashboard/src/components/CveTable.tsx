@@ -1,12 +1,61 @@
-import React from "react";
+import React, { useState, useMemo } from "react";
 import { CveData } from "../types/vulnerability";
 import { SeverityPill } from "./SeverityPill";
+import { compareSeverity } from "../utils/severity";
+import { compareVersions } from "../utils/versionCompare";
+
+type SortKey = 'id' | 'severity' | 'score' | 'affectedVersions' | 'fixedIn' | 'cwe';
 
 interface Props {
     cves: CveData[];
 }
 
 export const CveTable: React.FC<Props> = ({ cves }) => {
+    const [sortKey, setSortKey] = useState<SortKey>('score');
+    const [sortDesc, setSortDesc] = useState(true);
+
+    const handleSort = (key: SortKey) => {
+        if (sortKey === key) {
+            setSortDesc(!sortDesc);
+        } else {
+            setSortKey(key);
+            // Default descending for score/severity, ascending for others
+            setSortDesc(key === 'score' || key === 'severity');
+        }
+    };
+
+    const sortedCves = useMemo(() => {
+        return [...cves].sort((a, b) => {
+            let res = 0;
+            switch (sortKey) {
+                case 'id':
+                    res = (a.id || '').localeCompare(b.id || '');
+                    break;
+                case 'severity': {
+                    res = compareSeverity(a.severity, b.severity);
+                    if (res === 0) res = (a.score || 0) - (b.score || 0); // Tie breaker on score
+                    break;
+                }
+                case 'score':
+                    res = (a.score || 0) - (b.score || 0);
+                    break;
+                case 'affectedVersions': {
+                    const avA = Array.isArray(a.affectedVersions) ? a.affectedVersions.join(", ") : (a.affectedVersions || "");
+                    const avB = Array.isArray(b.affectedVersions) ? b.affectedVersions.join(", ") : (b.affectedVersions || "");
+                    res = avA.localeCompare(avB);
+                    break;
+                }
+                case 'fixedIn':
+                    res = compareVersions(a.fixedIn, b.fixedIn);
+                    break;
+                case 'cwe':
+                    res = (a.cwe || '').localeCompare(b.cwe || '');
+                    break;
+            }
+            return sortDesc ? -res : res;
+        });
+    }, [cves, sortKey, sortDesc]);
+
     if (!cves || cves.length === 0) {
         return null;
     }
@@ -16,17 +65,35 @@ export const CveTable: React.FC<Props> = ({ cves }) => {
             <table>
                 <thead>
                     <tr>
-                        <th>CVE ID</th>
-                        <th>Severity</th>
-                        <th>Score</th>
+                        <th className="cds--sortable-col" onClick={() => handleSort('id')}>
+                            CVE ID
+                            {sortKey === 'id' && <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>{sortDesc ? "↓" : "↑"}</span>}
+                        </th>
+                        <th className="cds--sortable-col" onClick={() => handleSort('severity')}>
+                            Severity
+                            {sortKey === 'severity' && <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>{sortDesc ? "↓" : "↑"}</span>}
+                        </th>
+                        <th className="cds--sortable-col" onClick={() => handleSort('score')}>
+                            Score
+                            {sortKey === 'score' && <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>{sortDesc ? "↓" : "↑"}</span>}
+                        </th>
                         <th>Description</th>
-                        <th>Affected Versions</th>
-                        <th>Fixed In</th>
-                        <th>CWE</th>
+                        <th className="cds--sortable-col" onClick={() => handleSort('affectedVersions')}>
+                            Affected Versions
+                            {sortKey === 'affectedVersions' && <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>{sortDesc ? "↓" : "↑"}</span>}
+                        </th>
+                        <th className="cds--sortable-col" onClick={() => handleSort('fixedIn')}>
+                            Fixed In
+                            {sortKey === 'fixedIn' && <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>{sortDesc ? "↓" : "↑"}</span>}
+                        </th>
+                        <th className="cds--sortable-col" onClick={() => handleSort('cwe')}>
+                            CWE
+                            {sortKey === 'cwe' && <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>{sortDesc ? "↓" : "↑"}</span>}
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
-                    {cves.map((cve) => (
+                    {sortedCves.map((cve) => (
                         <tr key={cve.id}>
                             <td className="cve-id">
                                 <a href={`https://nvd.nist.gov/vuln/detail/${cve.id}`} target="_blank" rel="noreferrer">

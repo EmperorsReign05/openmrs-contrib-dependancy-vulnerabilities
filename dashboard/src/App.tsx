@@ -11,8 +11,32 @@ import openmrsCore from './data/openmrs-core.json';
 import openmrsBilling from './data/openmrs-module-billing.json';
 import openmrsIdgen from './data/openmrs-module-idgen.json';
 
+interface GitLabVulnerability {
+  id?: string;
+  name?: string;
+  description?: string;
+  severity?: string;
+  score?: number;
+  cwe?: string;
+  solution?: string;
+  location?: {
+    dependency?: {
+      package?: { name?: string };
+      version?: string;
+    };
+  };
+  cvss_vectors?: Array<{ score?: number }>;
+  cvss_v3?: { score?: number };
+  identifiers?: Array<{ type?: string; name?: string; value?: string }>;
+  links?: Array<{ name?: string }>;
+}
+
+interface GitLabReport {
+  vulnerabilities?: GitLabVulnerability[];
+}
+
 // Helper to parse GitLab dependency scanning json into our models
-const parseReport = (repoName: string, jsonFile: any): RepositoryData => {
+const parseReport = (repoName: string, jsonFile: GitLabReport): RepositoryData => {
   const fileVulnerabilities = jsonFile.vulnerabilities || [];
 
   // Group CVEs by dependency
@@ -34,14 +58,14 @@ const parseReport = (repoName: string, jsonFile: any): RepositoryData => {
 
     let cwe: string | undefined = undefined;
     if (v.identifiers && Array.isArray(v.identifiers)) {
-      const cweIdentifier = v.identifiers.find((i: any) => i.type && i.type.toLowerCase() === 'cwe');
+      const cweIdentifier = v.identifiers.find(i => i.type && i.type.toLowerCase() === 'cwe');
       if (cweIdentifier) cwe = cweIdentifier.name || cweIdentifier.value;
     }
     if (!cwe && v.cwe) cwe = v.cwe;
 
     let hasExploit = false;
     if (v.links && Array.isArray(v.links)) {
-      hasExploit = v.links.some((l: any) => l.name && l.name.toUpperCase().includes('EXPLOIT'));
+      hasExploit = v.links.some(l => l.name && l.name.toUpperCase().includes('EXPLOIT'));
     }
 
     const cve: CveData = {

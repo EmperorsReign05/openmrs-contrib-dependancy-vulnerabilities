@@ -2,6 +2,10 @@ import React, { useState, useMemo } from "react";
 import { RepositoryData } from "../types/vulnerability";
 import { SeverityPill } from "./SeverityPill";
 import { DependencyRow } from "./DependencyRow";
+import { compareSeverity } from "../utils/severity";
+import { compareVersions } from "../utils/versionCompare";
+
+type SortKey = 'name' | 'severity' | 'cves' | 'fixVersion';
 
 interface Props {
     repository: RepositoryData;
@@ -9,16 +13,36 @@ interface Props {
 
 export const RepoSection: React.FC<Props> = ({ repository }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [sortKey, setSortKey] = useState<SortKey>('severity');
     const [sortDesc, setSortDesc] = useState(true);
 
-    const sortedDependencies = useMemo(() => {
-        // Dependencies are already sorted descending by severity in App.tsx -> parseReport
-        if (sortDesc) {
-            return repository.dependencies;
+    const handleSort = (key: SortKey) => {
+        if (sortKey === key) {
+            setSortDesc(!sortDesc);
+        } else {
+            setSortKey(key);
+            setSortDesc(key !== 'name'); // name defaults ascending, others descending
         }
-        // If sorting ascending, just reverse the pre-sorted list. 
-        return [...repository.dependencies].reverse();
-    }, [repository.dependencies, sortDesc]);
+    };
+
+    const sortedDependencies = useMemo(() => {
+        return [...repository.dependencies].sort((a, b) => {
+            let res = 0;
+            if (sortKey === 'severity') {
+                const sevDiff = compareSeverity(a.derivedSeverity, b.derivedSeverity);
+                if (sevDiff !== 0) res = sevDiff;
+                else res = (a.derivedHighestScore || 0) - (b.derivedHighestScore || 0);
+            } else if (sortKey === 'name') {
+                res = a.name.localeCompare(b.name);
+            } else if (sortKey === 'cves') {
+                res = a.cves.length - b.cves.length;
+            } else if (sortKey === 'fixVersion') {
+                res = compareVersions(a.derivedFixVersion, b.derivedFixVersion);
+            }
+
+            return sortDesc ? -res : res;
+        });
+    }, [repository.dependencies, sortKey, sortDesc]);
 
     return (
         <div className="cds--accordion-item">
@@ -38,20 +62,52 @@ export const RepoSection: React.FC<Props> = ({ repository }) => {
             {isOpen && (
                 <div className="cds--dependency-list">
                     <div className="cds--grid-header">
-                        <div>Dependency</div>
+                        <div
+                            className="cds--sortable-col"
+                            onClick={() => handleSort('name')}
+                        >
+                            Dependency
+                            {sortKey === 'name' && (
+                                <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>
+                                    {sortDesc ? "↓" : "↑"}
+                                </span>
+                            )}
+                        </div>
                         <div>Version</div>
                         <div
                             className="cds--sortable-col"
-                            onClick={() => setSortDesc(!sortDesc)}
+                            onClick={() => handleSort('severity')}
                         >
                             Severity
-                            <span className="cds--sort-icon">
-                                {sortDesc ? "↑" : "↓"}
-                            </span>
+                            {sortKey === 'severity' && (
+                                <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>
+                                    {sortDesc ? "↓" : "↑"}
+                                </span>
+                            )}
                         </div>
-                        <div>CVEs</div>
+                        <div
+                            className="cds--sortable-col"
+                            onClick={() => handleSort('cves')}
+                        >
+                            CVEs
+                            {sortKey === 'cves' && (
+                                <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>
+                                    {sortDesc ? "↓" : "↑"}
+                                </span>
+                            )}
+                        </div>
                         <div>Exploit?</div>
-                        <div>Fix Version</div>
+                        <div
+                            className="cds--sortable-col"
+                            onClick={() => handleSort('fixVersion')}
+                        >
+                            Fix Version
+                            {sortKey === 'fixVersion' && (
+                                <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>
+                                    {sortDesc ? "↓" : "↑"}
+                                </span>
+                            )}
+                        </div>
                     </div>
 
                     <div className="cds--dependency-rows-container">
