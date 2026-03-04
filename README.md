@@ -2,6 +2,11 @@
 
 A dynamic dashboard that visualizes required dependency updates based on GitLab Dependency Scanning.
 
+<div align="center">
+  <img src="dashboard/dist/pic%201.png" alt="Dashboard Preview 1" width="45%" />
+  <img src="dashboard/dist/pic%202.png" alt="Dashboard Preview 2" width="45%" />
+</div>
+
 ## Setup
 
 The frontend application is located in the `dashboard` directory.
