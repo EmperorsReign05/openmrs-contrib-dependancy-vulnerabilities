@@ -114,22 +114,42 @@ body {
         .cds--sortable-col {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            cursor: pointer;
-            user-select: none;
-
-            &:hover {
-                color: $link-color;
-            }
-
-            .cds--sort-icon {
-                font-size: 0.75rem;
-            }
         }
     }
 
     .cds--dependency-rows-container {
         background-color: $bg-white;
+    }
+}
+
+.cds--sortable-col {
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.2s;
+
+    &:hover {
+        color: $link-color;
+    }
+
+    .cds--sort-icon {
+        display: inline-block;
+        font-size: 0.75rem;
+        opacity: 0;
+        transition: opacity 0.2s;
+        margin-left: 0.25rem;
+        vertical-align: middle;
+    }
+
+    &.active .cds--sort-icon {
+        opacity: 1;
+    }
+
+    &:hover .cds--sort-icon {
+        opacity: 0.5;
+    }
+
+    &.active:hover .cds--sort-icon {
+        opacity: 1;
     }
 }
 

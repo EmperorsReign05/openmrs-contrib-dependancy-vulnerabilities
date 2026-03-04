@@ -65,30 +65,30 @@ export const CveTable: React.FC<Props> = ({ cves }) => {
             <table>
                 <thead>
                     <tr>
-                        <th className="cds--sortable-col" onClick={() => handleSort('id')}>
+                        <th className={`cds--sortable-col ${sortKey === 'id' ? 'active' : ''}`} onClick={() => handleSort('id')}>
                             CVE ID
-                            {sortKey === 'id' && <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>{sortDesc ? "↓" : "↑"}</span>}
+                            <span className="cds--sort-icon">{sortKey === 'id' ? (sortDesc ? "↓" : "↑") : "↕"}</span>
                         </th>
-                        <th className="cds--sortable-col" onClick={() => handleSort('severity')}>
+                        <th className={`cds--sortable-col ${sortKey === 'severity' ? 'active' : ''}`} onClick={() => handleSort('severity')}>
                             Severity
-                            {sortKey === 'severity' && <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>{sortDesc ? "↓" : "↑"}</span>}
+                            <span className="cds--sort-icon">{sortKey === 'severity' ? (sortDesc ? "↓" : "↑") : "↕"}</span>
                         </th>
-                        <th className="cds--sortable-col" onClick={() => handleSort('score')}>
+                        <th className={`cds--sortable-col ${sortKey === 'score' ? 'active' : ''}`} onClick={() => handleSort('score')}>
                             Score
-                            {sortKey === 'score' && <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>{sortDesc ? "↓" : "↑"}</span>}
+                            <span className="cds--sort-icon">{sortKey === 'score' ? (sortDesc ? "↓" : "↑") : "↕"}</span>
                         </th>
                         <th>Description</th>
-                        <th className="cds--sortable-col" onClick={() => handleSort('affectedVersions')}>
+                        <th className={`cds--sortable-col ${sortKey === 'affectedVersions' ? 'active' : ''}`} onClick={() => handleSort('affectedVersions')}>
                             Affected Versions
-                            {sortKey === 'affectedVersions' && <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>{sortDesc ? "↓" : "↑"}</span>}
+                            <span className="cds--sort-icon">{sortKey === 'affectedVersions' ? (sortDesc ? "↓" : "↑") : "↕"}</span>
                         </th>
-                        <th className="cds--sortable-col" onClick={() => handleSort('fixedIn')}>
+                        <th className={`cds--sortable-col ${sortKey === 'fixedIn' ? 'active' : ''}`} onClick={() => handleSort('fixedIn')}>
                             Fixed In
-                            {sortKey === 'fixedIn' && <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>{sortDesc ? "↓" : "↑"}</span>}
+                            <span className="cds--sort-icon">{sortKey === 'fixedIn' ? (sortDesc ? "↓" : "↑") : "↕"}</span>
                         </th>
-                        <th className="cds--sortable-col" onClick={() => handleSort('cwe')}>
+                        <th className={`cds--sortable-col ${sortKey === 'cwe' ? 'active' : ''}`} onClick={() => handleSort('cwe')}>
                             CWE
-                            {sortKey === 'cwe' && <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>{sortDesc ? "↓" : "↑"}</span>}
+                            <span className="cds--sort-icon">{sortKey === 'cwe' ? (sortDesc ? "↓" : "↑") : "↕"}</span>
                         </th>
                     </tr>
                 </thead>

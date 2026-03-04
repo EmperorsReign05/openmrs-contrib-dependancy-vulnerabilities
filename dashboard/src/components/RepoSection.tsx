@@ -63,50 +63,42 @@ export const RepoSection: React.FC<Props> = ({ repository }) => {
                 <div className="cds--dependency-list">
                     <div className="cds--grid-header">
                         <div
-                            className="cds--sortable-col"
+                            className={`cds--sortable-col ${sortKey === 'name' ? 'active' : ''}`}
                             onClick={() => handleSort('name')}
                         >
                             Dependency
-                            {sortKey === 'name' && (
-                                <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>
-                                    {sortDesc ? "↓" : "↑"}
-                                </span>
-                            )}
+                            <span className="cds--sort-icon">
+                                {sortKey === 'name' ? (sortDesc ? "↓" : "↑") : "↕"}
+                            </span>
                         </div>
                         <div>Version</div>
                         <div
-                            className="cds--sortable-col"
+                            className={`cds--sortable-col ${sortKey === 'severity' ? 'active' : ''}`}
                             onClick={() => handleSort('severity')}
                         >
                             Severity
-                            {sortKey === 'severity' && (
-                                <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>
-                                    {sortDesc ? "↓" : "↑"}
-                                </span>
-                            )}
+                            <span className="cds--sort-icon">
+                                {sortKey === 'severity' ? (sortDesc ? "↓" : "↑") : "↕"}
+                            </span>
                         </div>
                         <div
-                            className="cds--sortable-col"
+                            className={`cds--sortable-col ${sortKey === 'cves' ? 'active' : ''}`}
                             onClick={() => handleSort('cves')}
                         >
                             CVEs
-                            {sortKey === 'cves' && (
-                                <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>
-                                    {sortDesc ? "↓" : "↑"}
-                                </span>
-                            )}
+                            <span className="cds--sort-icon">
+                                {sortKey === 'cves' ? (sortDesc ? "↓" : "↑") : "↕"}
+                            </span>
                         </div>
                         <div>Exploit?</div>
                         <div
-                            className="cds--sortable-col"
+                            className={`cds--sortable-col ${sortKey === 'fixVersion' ? 'active' : ''}`}
                             onClick={() => handleSort('fixVersion')}
                         >
                             Fix Version
-                            {sortKey === 'fixVersion' && (
-                                <span className="cds--sort-icon" style={{ marginLeft: "4px" }}>
-                                    {sortDesc ? "↓" : "↑"}
-                                </span>
-                            )}
+                            <span className="cds--sort-icon">
+                                {sortKey === 'fixVersion' ? (sortDesc ? "↓" : "↑") : "↕"}
+                            </span>
                         </div>
                     </div>
 
