@@ -16,9 +16,9 @@ const REPOS = ['openmrs-core', 'openmrs-module-billing', 'openmrs-module-idgen']
 const TOKEN = process.env.GITHUB_TOKEN;
 
 if (!TOKEN) {
-    console.error("⚠️  GITHUB_TOKEN is missing in the environment or .env file.");
-    console.error("⚠️  To fetch artifacts dynamically, you need a personal access token.");
-    console.error("⚠️  Fallback: Using existing static JSON files in src/data/ if any exist.");
+    console.error("GITHUB_TOKEN is missing in the environment or .env file.");
+    console.error("To fetch artifacts dynamically, you need a personal access token.");
+    console.error("Fallback: Using existing static JSON files in src/data/ if any exist.");
     process.exit(0);
 }
 
@@ -63,7 +63,6 @@ async function fetchLatestReport(repo) {
             return;
         }
 
-        // Loop through runs to find the first one with a dependency report artifact
         let reportArtifact = null;
         let successfulRunId = null;
 
@@ -104,8 +103,6 @@ async function fetchLatestReport(repo) {
 
         for (const entry of zipEntries) {
             if (entry.name === 'dependency-check-report.json') {
-                // Determine file name based on what App.tsx normally imports or the static fallback files
-                // Wait, App.tsx imports `openmrs-module-billing.json`. So we should map it back to `repo`.json
                 const outPath = path.join(OUTPUT_DIR, `${repo}.json`);
                 const content = zip.readAsText(entry);
                 fs.writeFileSync(outPath, content);

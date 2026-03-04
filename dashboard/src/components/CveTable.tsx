@@ -19,7 +19,6 @@ export const CveTable: React.FC<Props> = ({ cves }) => {
             setSortDesc(!sortDesc);
         } else {
             setSortKey(key);
-            // Default descending for score/severity, ascending for others
             setSortDesc(key === 'score' || key === 'severity');
         }
     };
@@ -33,7 +32,7 @@ export const CveTable: React.FC<Props> = ({ cves }) => {
                     break;
                 case 'severity': {
                     res = compareSeverity(a.severity, b.severity);
-                    if (res === 0) res = (a.score || 0) - (b.score || 0); // Tie breaker on score
+                    if (res === 0) res = (a.score || 0) - (b.score || 0);
                     break;
                 }
                 case 'score':
