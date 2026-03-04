@@ -103,7 +103,7 @@ async function fetchLatestReport(repo) {
         }
 
         for (const entry of zipEntries) {
-            if (entry.name.endsWith('.json')) {
+            if (entry.name === 'dependency-check-report.json') {
                 // Determine file name based on what App.tsx normally imports or the static fallback files
                 // Wait, App.tsx imports `openmrs-module-billing.json`. So we should map it back to `repo`.json
                 const outPath = path.join(OUTPUT_DIR, `${repo}.json`);

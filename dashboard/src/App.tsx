@@ -6,101 +6,100 @@ import { hydrateDependency } from './utils/dependencyUtils';
 import { hydrateRepository } from './utils/repositoryUtils';
 import { sortCves, sortDependencies, sortRepositories } from './utils/sorting';
 
-// Import JSONs (will fallback to static values if dynamic script not run)
 import openmrsCore from './data/openmrs-core.json';
 import openmrsBilling from './data/openmrs-module-billing.json';
 import openmrsIdgen from './data/openmrs-module-idgen.json';
 
-interface GitLabVulnerability {
-  id?: string;
-  name?: string;
-  description?: string;
-  severity?: string;
-  score?: number;
-  cwe?: string;
-  solution?: string;
-  location?: {
-    dependency?: {
-      package?: { name?: string };
-      version?: string;
-    };
-  };
-  cvss_vectors?: Array<{ score?: number }>;
-  cvss_v3?: { score?: number };
-  identifiers?: Array<{ type?: string; name?: string; value?: string }>;
-  links?: Array<{ name?: string }>;
+interface OwaspDependency {
+  fileName?: string;
+  filePath?: string;
+  packages?: Array<{ id?: string }>;
+  vulnerabilities?: Array<{
+    name?: string;
+    severity?: string;
+    cvssv3?: { baseScore?: number; baseSeverity?: string };
+    cvssv2?: { score?: number; severity?: string };
+    description?: string;
+    cwes?: string[];
+    references?: Array<{ name?: string; url?: string }>;
+    vulnerableSoftware?: Array<{ software?: { id?: string; versionEndExcluding?: string; versionEndIncluding?: string } }>;
+  }>;
 }
 
-interface GitLabReport {
-  vulnerabilities?: GitLabVulnerability[];
+interface OwaspReport {
+  projectInfo?: { name?: string };
+  dependencies?: OwaspDependency[];
 }
 
-// Helper to parse GitLab dependency scanning json into our models
-const parseReport = (repoName: string, jsonFile: GitLabReport): RepositoryData => {
-  const fileVulnerabilities = jsonFile.vulnerabilities || [];
+const parseReport = (repoName: string, jsonFile: OwaspReport): RepositoryData => {
+  const dependencies: DependencyData[] = [];
 
-  // Group CVEs by dependency
-  const depMap = new Map<string, DependencyData>();
+  for (const dep of jsonFile.dependencies || []) {
+    if (!dep.vulnerabilities || dep.vulnerabilities.length === 0) continue;
 
-  for (const v of fileVulnerabilities) {
-    const depName = v.location?.dependency?.package?.name || "Unknown package";
-    const depKey = `${depName}@${v.location?.dependency?.version || "Unknown version"}`;
-
-    // Attempt to extract fields based on common structures
-    let score: number | undefined = undefined;
-    if (v.cvss_vectors && v.cvss_vectors.length > 0) {
-      score = v.cvss_vectors[0].score;
-    } else if (v.cvss_v3 && v.cvss_v3.score) {
-      score = v.cvss_v3.score;
-    } else if (v.score !== undefined) {
-      score = v.score;
+    let depName = dep.fileName || "Unknown dependency";
+    let version = "Unknown version";
+    if (dep.packages && dep.packages.length > 0 && dep.packages[0].id) {
+      const parts = dep.packages[0].id.split('@');
+      if (parts.length > 1) {
+        version = parts.pop() || "Unknown version";
+        depName = parts.join('@').replace(/^pkg:[^/]+\//, '');
+      }
     }
 
-    let cwe: string | undefined = undefined;
-    if (v.identifiers && Array.isArray(v.identifiers)) {
-      const cweIdentifier = v.identifiers.find(i => i.type && i.type.toLowerCase() === 'cwe');
-      if (cweIdentifier) cwe = cweIdentifier.name || cweIdentifier.value;
-    }
-    if (!cwe && v.cwe) cwe = v.cwe;
+    const cves: CveData[] = dep.vulnerabilities.map(v => {
+      let score = v.cvssv3?.baseScore ?? v.cvssv2?.score;
+      let rawSeverity = v.severity ?? v.cvssv3?.baseSeverity ?? v.cvssv2?.severity ?? "Unknown";
+      let severity = rawSeverity.charAt(0).toUpperCase() + rawSeverity.slice(1).toLowerCase();
+      let cwe = v.cwes ? v.cwes.join(", ") : undefined;
 
-    let hasExploit = false;
-    if (v.links && Array.isArray(v.links)) {
-      hasExploit = v.links.some(l => l.name && l.name.toUpperCase().includes('EXPLOIT'));
-    }
+      let hasExploit = false;
+      if (v.references && Array.isArray(v.references)) {
+        hasExploit = v.references.some(r => r.name && r.name.toUpperCase().includes('EXPLOIT'));
+      }
 
-    const cve: CveData = {
-      id: v.id || v.name || "Unknown CVE",
-      name: v.name || "Unknown",
-      description: v.description,
-      severity: v.severity,
-      score,
-      affectedVersions: v.location?.dependency?.version,
-      fixedIn: v.solution ? v.solution.replace(/Upgrade to version|Upgrade to/gi, '').trim() : undefined,
-      cwe,
-      hasExploit,
-    };
+      let fixedIn = undefined;
+      let affectedVersions = "-";
+      if (v.vulnerableSoftware && v.vulnerableSoftware.length > 0) {
+        const sw = v.vulnerableSoftware[0].software;
+        if (sw) {
+          if (sw.versionEndExcluding) {
+            fixedIn = sw.versionEndExcluding;
+            affectedVersions = `< ${sw.versionEndExcluding}`;
+          } else if (sw.versionEndIncluding) {
+            affectedVersions = `<= ${sw.versionEndIncluding}`;
+          } else {
+            const parts = sw.id?.split(':') || [];
+            if (parts.length >= 6 && parts[5] !== '*') {
+              affectedVersions = parts[5].replace(/\\/g, '');
+            }
+          }
+        }
+      }
 
-    if (!depMap.has(depKey)) {
-      depMap.set(depKey, {
-        name: depName,
-        version: v.location?.dependency?.version || "Unknown version",
-        cves: []
-      });
-    }
+      return {
+        id: v.name || "Unknown CVE",
+        name: v.name || "Unknown",
+        description: v.description,
+        severity: severity,
+        score,
+        affectedVersions,
+        fixedIn,
+        cwe,
+        hasExploit,
+      };
+    });
 
-    depMap.get(depKey)!.cves.push(cve);
+    const sortedCves = sortCves(cves);
+    dependencies.push(hydrateDependency({
+      name: depName,
+      version,
+      cves: sortedCves
+    }));
   }
-
-  // Hydrate and sort dependencies
-  const dependencies: DependencyData[] = Array.from(depMap.values()).map(dep => {
-    // Sort CVEs inside dependency
-    const sortedCves = sortCves(dep.cves);
-    return hydrateDependency({ ...dep, cves: sortedCves });
-  });
 
   const sortedDependencies = sortDependencies(dependencies);
 
-  // Return hydrated tracking repository
   return hydrateRepository({
     name: repoName,
     dependencies: sortedDependencies

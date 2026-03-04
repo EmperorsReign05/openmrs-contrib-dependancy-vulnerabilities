@@ -4,7 +4,6 @@ A dynamic dashboard that visualizes required dependency updates based on GitLab 
 
 <div align="center">
   <img src="dashboard/public/pic 1.png" alt="Dashboard Preview 1" width="45%" />
-  <img src="dashboard/public/pic 2.png" alt="Dashboard Preview 2" width="45%" />
 </div>
 
 ## Setup
@@ -23,8 +22,8 @@ npm run build
 ```
 
 ## Implemented Features
-- **Dynamic Fetching**: Node script (`npm run fetch-data`) connects to GitHub API, downloads the latest workflow artifact zip, and updates the local `.json` reports.
-- **Hierarchical Parsing**: Maps flat JSON lists into a tiered relation: Repository → Dependency → CVEs.
+- **Dynamic Fetching**: Node script (`fetch-data.mjs`) connects to GitHub API, downloads the latest artifacts, and extracts the enriched `dependency-check-report.json` payloads.
+- **Hierarchical Parsing**: Maps complex OWASP JSON into a clean, tiered relation: Repository → Dependency → CVEs.
 - **Strict Sorting**: 
   - Supports synchronized multi-column sorting natively across Dependencies and CVEs using CVSS Score, Severity, Semantic Versioning, or Alphabetics.
 - **Semantic Versioning**: Extracts combinations to determine the absolute highest `fixedIn` patch version required.
