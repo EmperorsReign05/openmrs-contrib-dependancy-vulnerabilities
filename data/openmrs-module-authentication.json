@@ -5,27 +5,27 @@
         "dataSource": [
 {
                 "name": "NVD API Last Checked",
-                "timestamp": "2026-03-30T12:08:34Z"
+                "timestamp": "2026-03-19T11:56:42Z"
             }
 ,{
                 "name": "NVD API Last Modified",
-                "timestamp": "2026-03-30T11:16:04Z"
+                "timestamp": "2026-03-19T11:16:14Z"
             }
 ,{
                 "name": "NVD Cache Last Checked",
-                "timestamp": "2026-03-30T12:08:34Z"
+                "timestamp": "2026-03-19T11:56:42Z"
             }
 ,{
                 "name": "NVD Cache Last Modified",
-                "timestamp": "2026-03-30T11:16:04Z"
+                "timestamp": "2026-03-19T11:16:14Z"
             }
         ]
 
 
     },
     "projectInfo": {
-        "name": "openmrs-module-billing",
-        "reportDate": "2026-03-30T15:28:07.793085778Z",
+        "name": "openmrs-module-authentication",
+        "reportDate": "2026-03-19T13:40:20.819985326Z",
         "credits": {
             "NVD": "This product uses the NVD API but is not endorsed or certified by the NVD. This report contains data retrieved from the National Vulnerability Database: https://nvd.nist.gov",
             "CISA": "This report may contain data retrieved from the CISA Known Exploited Vulnerability Catalog: https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
@@ -37,81 +37,18 @@
     "dependencies": [
 {
             "isVirtual": false,
-            "fileName": "barcodes-8.0.2.jar",
-            "filePath": "\/github\/workspace\/omod\/target\/billing-2.3.0-SNAPSHOT\/lib\/barcodes-8.0.2.jar"
-,"md5": "44319d132bfef12673ea58a38b605c60",
-            "sha1": "a9edd4a5b7f2cd0417492faa16dd98f6ce19988f",
-            "sha256": "edd9f78b056e5a1b1f51f0cf6b4b74f1320baa5866f8ea84f387dc78eb598c3c"            ,"evidenceCollected": {
+            "fileName": "authentication-2.3.0-SNAPSHOT-javadoc.jar",
+            "filePath": "\/github\/workspace\/omod\/target\/authentication-2.3.0-SNAPSHOT-javadoc.jar"
+,"md5": "cbe4876c589b4708dd20a9bf3de5503b",
+            "sha1": "e7f42336e8727101862e63ebe200bd1da1b29d72",
+            "sha256": "43e9c849cc6e649e8ee42490eb1e9d8a0d5c4024f2efa62925398225acf0e38e"            ,"evidenceCollected": {
                 "vendorEvidence": [
 {
                             "type": "vendor",
                             "confidence": "HIGH",
                             "source": "file",
                             "name": "name",
-                            "value": "barcodes"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "HIGHEST",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "barcodes"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "barcodes"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "HIGHEST",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "itextpdf"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "itextpdf"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "LOW",
-                            "source": "pom",
-                            "name": "artifactid",
-                            "value": "barcodes"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "HIGHEST",
-                            "source": "pom",
-                            "name": "groupid",
-                            "value": "com.itextpdf"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "HIGH",
-                            "source": "pom",
-                            "name": "name",
-                            "value": "iText - barcodes"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "LOW",
-                            "source": "pom",
-                            "name": "parent-artifactid",
-                            "value": "root"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "HIGHEST",
-                            "source": "pom",
-                            "name": "url",
-                            "value": "https:\/\/itextpdf.com\/"
+                            "value": "authentication"
                         }
                 ],
                 "productEvidence": [
@@ -120,167 +57,56 @@
                             "confidence": "HIGH",
                             "source": "file",
                             "name": "name",
-                            "value": "barcodes"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "HIGHEST",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "barcodes"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "barcodes"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "HIGHEST",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "itextpdf"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "qrcode"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "HIGHEST",
-                            "source": "pom",
-                            "name": "artifactid",
-                            "value": "barcodes"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "HIGHEST",
-                            "source": "pom",
-                            "name": "groupid",
-                            "value": "com.itextpdf"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "HIGH",
-                            "source": "pom",
-                            "name": "name",
-                            "value": "iText - barcodes"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "MEDIUM",
-                            "source": "pom",
-                            "name": "parent-artifactid",
-                            "value": "root"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "MEDIUM",
-                            "source": "pom",
-                            "name": "url",
-                            "value": "https:\/\/itextpdf.com\/"
+                            "value": "authentication"
                     }
                 ],
                 "versionEvidence": [
                     {
                         "type": "version",
-                        "confidence": "HIGH",
+                        "confidence": "MEDIUM",
                         "source": "file",
-                        "name": "version",
-                        "value": "8.0.2"
+                        "name": "name",
+                        "value": "authentication"
                     }
 ,                    {
                         "type": "version",
-                        "confidence": "HIGHEST",
-                        "source": "pom",
+                        "confidence": "HIGH",
+                        "source": "file",
                         "name": "version",
-                        "value": "8.0.2"
+                        "value": "2.3.0.snapshot"
                     }
                 ]
             }
-                ,"packages": [
-                    {
-                        "id": "pkg:maven\/com.itextpdf\/barcodes@8.0.2"
-,"confidence": "HIGH"                    }
-            ]                ,"vulnerabilityIds": [
-                {
-                    "id": "cpe:2.3:a:itextpdf:itext:8.0.2:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Aitextpdf%3Aitext%3A8.0.2%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
-            ]
-            ,"vulnerabilities": [
- {
-                "source": "NVD",
-                "name": "CVE-2023-6298",
-                    "severity" : "MEDIUM",
-                    "cvssv2": {
-                        "score": 5.0
-                        ,"accessVector": "NETWORK"
-                        ,"accessComplexity": "LOW"
-                        ,"authenticationr": "NONE"
-                        ,"confidentialityImpact": "NONE"
-                        ,"integrityImpact": "NONE"
-                        ,"availabilityImpact": "PARTIAL"
-                        ,"severity": "MEDIUM"
-,"version": "2.0","exploitabilityScore": "10.0","impactScore": "2.9"                    },
-                    "cvssv3": {
-                        "baseScore": 6.5
-                        ,"attackVector": "NETWORK"
-                        ,"attackComplexity": "LOW"
-                        ,"privilegesRequired": "NONE"
-                        ,"userInteraction": "REQUIRED"
-                        ,"scope": "UNCHANGED"
-                        ,"confidentialityImpact": "NONE"
-                        ,"integrityImpact": "NONE"
-                        ,"availabilityImpact": "HIGH"
-                        ,"baseSeverity": "MEDIUM"
-,"exploitabilityScore": "2.8","impactScore": "3.6","version": "3.1"                    },
-                    "cwes": [
-                        "CWE-129",                        "NVD-CWE-noinfo"                    ],
-                "description": "A vulnerability classified as problematic was found in Apryse iText 8.0.2. This vulnerability affects the function main of the file PdfDocument.java. The manipulation leads to improper validation of array index. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The identifier of this vulnerability is VDB-246124. NOTE: The vendor was contacted early about this disclosure but did not respond in any way. A statement published afterwards explains that the exception is not a vulnerability and the identified CWEs might not apply to the software.",
-                "notes": "",
-                "references": [
- {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/drive.google.com\/drive\/folders\/1OBAeGH_rNfa1os6g6QlIt4pL-2NKHZm_?usp=sharing","name": "EXPLOIT,THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/kb.itextpdf.com\/itext\/statement-regarding-cve-2022-24198-and-2023-6298","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/drive.google.com\/drive\/folders\/1OBAeGH_rNfa1os6g6QlIt4pL-2NKHZm_?usp=sharing","name": "EXPLOIT,THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/vuldb.com\/?ctiid.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/vuldb.com\/?id.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/kb.itextpdf.com\/itext\/statement-regarding-cve-2022-24198-and-2023-6298","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/vuldb.com\/?id.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/vuldb.com\/?ctiid.246124","name": "THIRD_PARTY_ADVISORY"                    }                ],
-                "vulnerableSoftware": [
- {
-                        "software": { 
-                            "id":"cpe:2.3:a:itextpdf:itext:8.0.2:*:*:*:*:*:*:*"
-,"vulnerabilityIdMatched":"true"                        }
-                    }                ]
-                }            ]        },{
+
+        },{
             "isVirtual": false,
-            "fileName": "billing-2.3.0-SNAPSHOT.jar (shaded: org.openmrs.module:billing-omod:2.3.0-SNAPSHOT)",
-            "filePath": "\/github\/workspace\/omod\/target\/billing-2.3.0-SNAPSHOT.jar\/META-INF\/maven\/org.openmrs.module\/billing-omod\/pom.xml"
-,"md5": "cf490d305750d8cb3ae42966450b1010",
-            "sha1": "be1af7d29dff199c6caa1997e7dbabfeb6181958",
-            "sha256": "a9b75acac76a153616581655bc81c52436502af81f52835a62f1950d23184147","description": "OMOD project for the OpenMRS Billing module"            ,"evidenceCollected": {
+            "fileName": "authentication-2.3.0-SNAPSHOT-tests.jar (shaded: org.openmrs.module:authentication-omod:2.3.0-SNAPSHOT)",
+            "filePath": "\/github\/workspace\/omod\/target\/authentication-2.3.0-SNAPSHOT-tests.jar\/META-INF\/maven\/org.openmrs.module\/authentication-omod\/pom.xml"
+,"md5": "f68e87d09c6830f167cea11178375883",
+            "sha1": "af6775e79ab26cc4761dbcbea9cca483646e08a5",
+            "sha256": "dbdc617ff3d4b4a75eb81eae01b203f399c22dbe4b1ed19f03eb6ac7cbbfd551","description": "OMOD for authentication module"            ,"relatedDependencies": [
+  {
+                    "isVirtual": false,
+                    "fileName": "authentication-2.3.0-SNAPSHOT.jar (shaded: org.openmrs.module:authentication-omod:2.3.0-SNAPSHOT)",
+                    "filePath": "\/github\/workspace\/omod\/target\/authentication-2.3.0-SNAPSHOT.jar\/META-INF\/maven\/org.openmrs.module\/authentication-omod\/pom.xml"
+,"sha256": "dbdc617ff3d4b4a75eb81eae01b203f399c22dbe4b1ed19f03eb6ac7cbbfd551",
+                    "sha1": "af6775e79ab26cc4761dbcbea9cca483646e08a5",
+                    "md5": "f68e87d09c6830f167cea11178375883",
+                    "packageIds": [
+                            {
+                                "id": "pkg:maven/org.openmrs.module/authentication-omod@2.3.0-SNAPSHOT"
+                            }
+                    ]
+                }
+            ]
+            ,"evidenceCollected": {
                 "vendorEvidence": [
 {
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "pom",
                             "name": "artifactid",
-                            "value": "billing-omod"
+                            "value": "authentication-omod"
                         }
 ,{
                             "type": "vendor",
@@ -294,14 +120,14 @@
                             "confidence": "HIGH",
                             "source": "pom",
                             "name": "name",
-                            "value": "OpenMRS Billing Module OMOD"
+                            "value": "Authentication OMOD"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "pom",
                             "name": "parent-artifactid",
-                            "value": "billing"
+                            "value": "authentication"
                         }
                 ],
                 "productEvidence": [
@@ -310,7 +136,7 @@
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "artifactid",
-                            "value": "billing-omod"
+                            "value": "authentication-omod"
                     }
 ,{
                             "type": "product",
@@ -324,14 +150,14 @@
                             "confidence": "HIGH",
                             "source": "pom",
                             "name": "name",
-                            "value": "OpenMRS Billing Module OMOD"
+                            "value": "Authentication OMOD"
                     }
 ,{
                             "type": "product",
                             "confidence": "MEDIUM",
                             "source": "pom",
                             "name": "parent-artifactid",
-                            "value": "billing"
+                            "value": "authentication"
                     }
                 ],
                 "versionEvidence": [
@@ -346,7 +172,7 @@
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/org.openmrs.module\/billing-omod@2.3.0-SNAPSHOT"
+                        "id": "pkg:maven\/org.openmrs.module\/authentication-omod@2.3.0-SNAPSHOT"
 ,"confidence": "HIGH"                    }
             ]                ,"vulnerabilityIds": [
                 {
@@ -782,25 +608,25 @@
                     }                ]
                 }            ]        },{
             "isVirtual": false,
-            "fileName": "billing-2.3.0-SNAPSHOT.jar",
-            "filePath": "\/github\/workspace\/omod\/target\/billing-2.3.0-SNAPSHOT.jar"
-,"md5": "feac2cae1ec45a969e29d01df5cebf0e",
-            "sha1": "64e4bd37e5db381340ca339cf5d3c993c6edc455",
-            "sha256": "8d35890b4522ba82c85701decedbc2f8698e3486223c115c264b4244de4b5efe"            ,"evidenceCollected": {
+            "fileName": "authentication-2.3.0-SNAPSHOT-tests.jar",
+            "filePath": "\/github\/workspace\/omod\/target\/authentication-2.3.0-SNAPSHOT-tests.jar"
+,"md5": "e7febc5d5ce1b41c452662b69ed2f214",
+            "sha1": "b9f7c55c38fa133e89c31d8174f6cf24f7eece5d",
+            "sha256": "ac77d43d58633c521db67bb78e26edfe4753be1037428768fbe40846e7a9bb8b"            ,"evidenceCollected": {
                 "vendorEvidence": [
 {
                             "type": "vendor",
                             "confidence": "HIGH",
                             "source": "file",
                             "name": "name",
-                            "value": "billing"
+                            "value": "authentication"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "jar",
                             "name": "package name",
-                            "value": "billing"
+                            "value": "authentication"
                         }
 ,{
                             "type": "vendor",
@@ -830,14 +656,14 @@
                             "confidence": "HIGH",
                             "source": "file",
                             "name": "name",
-                            "value": "billing"
+                            "value": "authentication"
                     }
 ,{
                             "type": "product",
                             "confidence": "LOW",
                             "source": "jar",
                             "name": "package name",
-                            "value": "billing"
+                            "value": "authentication"
                     }
 ,{
                             "type": "product",
@@ -867,7 +693,7 @@
                         "confidence": "MEDIUM",
                         "source": "file",
                         "name": "name",
-                        "value": "billing"
+                        "value": "authentication"
                     }
 ,                    {
                         "type": "version",
@@ -895,39 +721,221 @@
 
         },{
             "isVirtual": false,
-            "fileName": "billing-api-2.3.0-SNAPSHOT.jar",
-            "filePath": "\/github\/workspace\/api\/target\/billing-api-2.3.0-SNAPSHOT.jar"
-,"md5": "86315890293550ffdbea52ba52e82532",
-            "sha1": "7dd809d7e7b5ad9e8eca6c66e9686241ba040529",
-            "sha256": "bc00b6dcfe0dc5839b3d9fed3bba795f7144159ad7c60b1de6b2e87e37d9f147","description": "API project for the OpenMRS Billing module"            ,"relatedDependencies": [
+            "fileName": "authentication-2.3.0-SNAPSHOT.jar",
+            "filePath": "\/github\/workspace\/omod\/target\/authentication-2.3.0-SNAPSHOT.jar"
+,"md5": "aea88377e01f213e3c673822ccb8d216",
+            "sha1": "f323e81429e899835e66513bc1924b5b8e50a234",
+            "sha256": "5f578d913582d58d9c7c3981e4df5b9642195a1088949a02ff5666c1fdccca4b"            ,"evidenceCollected": {
+                "vendorEvidence": [
+{
+                            "type": "vendor",
+                            "confidence": "HIGH",
+                            "source": "file",
+                            "name": "name",
+                            "value": "authentication"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "authentication"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "module"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "openmrs"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "Manifest",
+                            "name": "build-jdk-spec",
+                            "value": "1.8"
+                        }
+                ],
+                "productEvidence": [
+{
+                            "type": "product",
+                            "confidence": "HIGH",
+                            "source": "file",
+                            "name": "name",
+                            "value": "authentication"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "authentication"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "module"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "Manifest",
+                            "name": "build-jdk-spec",
+                            "value": "1.8"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "MEDIUM",
+                        "source": "file",
+                        "name": "name",
+                        "value": "authentication"
+                    }
+,                    {
+                        "type": "version",
+                        "confidence": "HIGH",
+                        "source": "file",
+                        "name": "version",
+                        "value": "2.3.0.snapshot"
+                    }
+,                    {
+                        "type": "version",
+                        "confidence": "LOW",
+                        "source": "Manifest",
+                        "name": "build-jdk-spec",
+                        "value": "1.8"
+                    }
+,                    {
+                        "type": "version",
+                        "confidence": "MEDIUM",
+                        "source": "Manifest",
+                        "name": "java-version",
+                        "value": "8"
+                    }
+                ]
+            }
+
+        },{
+            "isVirtual": false,
+            "fileName": "authentication-api-2.3.0-SNAPSHOT-javadoc.jar",
+            "filePath": "\/github\/workspace\/api\/target\/authentication-api-2.3.0-SNAPSHOT-javadoc.jar"
+,"md5": "bb321f2559bed153e2001633fc2593f3",
+            "sha1": "6872f50b06bdcb620317f6d26ff05eb193144e63",
+            "sha256": "f5998753d272de2b987dd4e2ce1d2dce9c7ec1604486af33c3f6d093abfb798e"            ,"evidenceCollected": {
+                "vendorEvidence": [
+{
+                            "type": "vendor",
+                            "confidence": "HIGH",
+                            "source": "file",
+                            "name": "name",
+                            "value": "authentication-api"
+                        }
+                ],
+                "productEvidence": [
+{
+                            "type": "product",
+                            "confidence": "HIGH",
+                            "source": "file",
+                            "name": "name",
+                            "value": "authentication-api"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "MEDIUM",
+                        "source": "file",
+                        "name": "name",
+                        "value": "authentication-api"
+                    }
+,                    {
+                        "type": "version",
+                        "confidence": "HIGH",
+                        "source": "file",
+                        "name": "version",
+                        "value": "2.3.0.snapshot"
+                    }
+                ]
+            }
+
+        },{
+            "isVirtual": false,
+            "fileName": "authentication-api-2.3.0-SNAPSHOT-javadoc.jar: script.js",
+            "filePath": "\/github\/workspace\/api\/target\/authentication-api-2.3.0-SNAPSHOT-javadoc.jar\/script.js"
+,"md5": "4a010b8264c9873452f055748133bb29",
+            "sha1": "58e5151d49209a2e12b988e84e9a74b781c68a2e",
+            "sha256": "506393161b692568f588d68beaecf9ad5d33f147abad909d9cde12918dbce7b7"            ,"relatedDependencies": [
   {
                     "isVirtual": false,
-                    "fileName": "billing-api-2.3.0-SNAPSHOT.jar",
-                    "filePath": "\/github\/workspace\/omod\/target\/billing-2.3.0-SNAPSHOT\/lib\/billing-api-2.3.0-SNAPSHOT.jar"
-,"sha256": "bc00b6dcfe0dc5839b3d9fed3bba795f7144159ad7c60b1de6b2e87e37d9f147",
-                    "sha1": "7dd809d7e7b5ad9e8eca6c66e9686241ba040529",
-                    "md5": "86315890293550ffdbea52ba52e82532"
+                    "fileName": "authentication-2.3.0-SNAPSHOT-javadoc.jar: script.js",
+                    "filePath": "\/github\/workspace\/omod\/target\/authentication-2.3.0-SNAPSHOT-javadoc.jar\/script.js"
+,"sha256": "506393161b692568f588d68beaecf9ad5d33f147abad909d9cde12918dbce7b7",
+                    "sha1": "58e5151d49209a2e12b988e84e9a74b781c68a2e",
+                    "md5": "4a010b8264c9873452f055748133bb29"
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "billing-fhir-2.3.0-SNAPSHOT.jar",
-                    "filePath": "\/github\/workspace\/fhir\/target\/billing-fhir-2.3.0-SNAPSHOT.jar"
-,"sha256": "78130290c98487447db8f70fd13450978c1e99b8ebbd165d06f98930d318fd09",
-                    "sha1": "910757479c01e6b8ff4d116a92b23f997a64c7e5",
-                    "md5": "eb0599bf346783a6c8c9f7148dbe24d1",
+                    "fileName": "script.js",
+                    "filePath": "\/github\/workspace\/api\/target\/reports\/apidocs\/script.js"
+,"sha256": "506393161b692568f588d68beaecf9ad5d33f147abad909d9cde12918dbce7b7",
+                    "sha1": "58e5151d49209a2e12b988e84e9a74b781c68a2e",
+                    "md5": "4a010b8264c9873452f055748133bb29"
+                }
+ , {
+                    "isVirtual": false,
+                    "fileName": "script.js",
+                    "filePath": "\/github\/workspace\/omod\/target\/reports\/apidocs\/script.js"
+,"sha256": "506393161b692568f588d68beaecf9ad5d33f147abad909d9cde12918dbce7b7",
+                    "sha1": "58e5151d49209a2e12b988e84e9a74b781c68a2e",
+                    "md5": "4a010b8264c9873452f055748133bb29"
+                }
+            ]
+            ,"evidenceCollected": {
+                "vendorEvidence": [
+                ],
+                "productEvidence": [
+                ],
+                "versionEvidence": [
+                ]
+            }
+
+        },{
+            "isVirtual": false,
+            "fileName": "authentication-api-2.3.0-SNAPSHOT.jar",
+            "filePath": "\/github\/workspace\/api\/target\/authentication-api-2.3.0-SNAPSHOT.jar"
+,"md5": "32041bd892f084a75ce48d0d5379d1b3",
+            "sha1": "706dc1ad3f320599192ef8cbd4349b22b1078fde",
+            "sha256": "09918e4cf56e303dad2d1a9d5640c3c3200ea294eeb688ef4a227efe7dc91d58","description": "API for authentication module"            ,"relatedDependencies": [
+  {
+                    "isVirtual": false,
+                    "fileName": "authentication-api-2.3.0-SNAPSHOT-tests.jar",
+                    "filePath": "\/github\/workspace\/api\/target\/authentication-api-2.3.0-SNAPSHOT-tests.jar"
+,"sha256": "74cff1aec30634a47cbe7fafce59b4ff700fe015c712a4f874d984db744b25dc",
+                    "sha1": "635380bef0a32270e4ee60734c10368975228c3b",
+                    "md5": "df023b049e19d81c4d2c6854c0c33628",
                     "packageIds": [
                             {
-                                "id": "pkg:maven/org.openmrs.module/billing-fhir@2.3.0-SNAPSHOT"
+                                "id": "pkg:maven/org.openmrs.module/authentication-api@2.3.0-SNAPSHOT"
                             }
                     ]
                 }
  , {
                     "isVirtual": false,
-                    "fileName": "billing-fhir-2.3.0-SNAPSHOT.jar",
-                    "filePath": "\/github\/workspace\/omod\/target\/billing-2.3.0-SNAPSHOT\/lib\/billing-fhir-2.3.0-SNAPSHOT.jar"
-,"sha256": "78130290c98487447db8f70fd13450978c1e99b8ebbd165d06f98930d318fd09",
-                    "sha1": "910757479c01e6b8ff4d116a92b23f997a64c7e5",
-                    "md5": "eb0599bf346783a6c8c9f7148dbe24d1"
+                    "fileName": "authentication-api-2.3.0-SNAPSHOT.jar",
+                    "filePath": "\/github\/workspace\/omod\/target\/authentication-2.3.0-SNAPSHOT\/lib\/authentication-api-2.3.0-SNAPSHOT.jar"
+,"sha256": "09918e4cf56e303dad2d1a9d5640c3c3200ea294eeb688ef4a227efe7dc91d58",
+                    "sha1": "706dc1ad3f320599192ef8cbd4349b22b1078fde",
+                    "md5": "32041bd892f084a75ce48d0d5379d1b3"
                 }
             ]
             ,"evidenceCollected": {
@@ -937,21 +945,14 @@
                             "confidence": "HIGH",
                             "source": "file",
                             "name": "name",
-                            "value": "billing-api"
+                            "value": "authentication-api"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "api"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "HIGHEST",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "billing"
+                            "value": "authentication"
                         }
 ,{
                             "type": "vendor",
@@ -979,7 +980,7 @@
                             "confidence": "LOW",
                             "source": "pom",
                             "name": "artifactid",
-                            "value": "billing-api"
+                            "value": "authentication-api"
                         }
 ,{
                             "type": "vendor",
@@ -993,14 +994,14 @@
                             "confidence": "HIGH",
                             "source": "pom",
                             "name": "name",
-                            "value": "OpenMRS Billing Module API"
+                            "value": "Authentication API"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "pom",
                             "name": "parent-artifactid",
-                            "value": "billing"
+                            "value": "authentication"
                         }
                 ],
                 "productEvidence": [
@@ -1009,21 +1010,14 @@
                             "confidence": "HIGH",
                             "source": "file",
                             "name": "name",
-                            "value": "billing-api"
+                            "value": "authentication-api"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "api"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "HIGHEST",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "billing"
+                            "value": "authentication"
                     }
 ,{
                             "type": "product",
@@ -1051,7 +1045,7 @@
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "artifactid",
-                            "value": "billing-api"
+                            "value": "authentication-api"
                     }
 ,{
                             "type": "product",
@@ -1065,14 +1059,14 @@
                             "confidence": "HIGH",
                             "source": "pom",
                             "name": "name",
-                            "value": "OpenMRS Billing Module API"
+                            "value": "Authentication API"
                     }
 ,{
                             "type": "product",
                             "confidence": "MEDIUM",
                             "source": "pom",
                             "name": "parent-artifactid",
-                            "value": "billing"
+                            "value": "authentication"
                     }
                 ],
                 "versionEvidence": [
@@ -1087,7 +1081,7 @@
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/org.openmrs.module\/billing-api@2.3.0-SNAPSHOT"
+                        "id": "pkg:maven\/org.openmrs.module\/authentication-api@2.3.0-SNAPSHOT"
 ,"confidence": "HIGH"                    }
             ]                ,"vulnerabilityIds": [
                 {
@@ -1523,74 +1517,375 @@
                     }                ]
                 }            ]        },{
             "isVirtual": false,
-            "fileName": "bouncy-castle-connector-8.0.2.jar",
-            "filePath": "\/github\/workspace\/omod\/target\/billing-2.3.0-SNAPSHOT\/lib\/bouncy-castle-connector-8.0.2.jar"
-,"md5": "ecdd0d918b4f481d6e7ebb22959e10bb",
-            "sha1": "15563e97b944c4976458570fdb5ae529204c1a72",
-            "sha256": "c03fbe3589db25086c84887fcb7012a1b7f3270a1e38fbd783cb4d84eaef4b80"            ,"evidenceCollected": {
+            "fileName": "commons-codec-1.13.jar",
+            "filePath": "\/github\/workspace\/omod\/target\/authentication-2.3.0-SNAPSHOT\/lib\/commons-codec-1.13.jar"
+,"md5": "5085f186156822fa3a02e55bcd5584a8",
+            "sha1": "3f18e1aa31031d89db6f01ba05d501258ce69d2c",
+            "sha256": "61f7a3079e92b9fdd605238d0295af5fd11ac411a0a0af48deace1f6c5ffa072","description": "\n     The Apache Commons Codec package contains simple encoder and decoders for\n     various formats such as Base64 and Hexadecimal.  In addition to these\n     widely used encoders and decoders, the codec package also maintains a\n     collection of phonetic encoding utilities.\n  ","license": "https:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt"            ,"evidenceCollected": {
                 "vendorEvidence": [
 {
                             "type": "vendor",
                             "confidence": "HIGH",
                             "source": "file",
                             "name": "name",
-                            "value": "bouncy-castle-connector"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "bouncycastleconnector"
+                            "value": "commons-codec"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "itextpdf"
+                            "value": "apache"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "HIGHEST",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "codec"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "HIGHEST",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "commons"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "HIGHEST",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "encoder"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "automatic-module-name",
+                            "value": "org.apache.commons.codec"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "itextpdf"
+                            "source": "Manifest",
+                            "name": "bundle-docurl",
+                            "value": "https:\/\/commons.apache.org\/proper\/commons-codec\/"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "bundle-symbolicname",
+                            "value": "org.apache.commons.commons-codec"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "Manifest",
+                            "name": "implementation-url",
+                            "value": "https:\/\/commons.apache.org\/proper\/commons-codec\/"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "HIGH",
+                            "source": "Manifest",
+                            "name": "Implementation-Vendor",
+                            "value": "The Apache Software Foundation"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "Implementation-Vendor-Id",
+                            "value": "commons-codec"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "Manifest",
+                            "name": "specification-vendor",
+                            "value": "The Apache Software Foundation"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "pom",
                             "name": "artifactid",
-                            "value": "bouncy-castle-connector"
+                            "value": "commons-codec"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "bayard@apache.org"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "chtompki@apache.org"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "dgraham@apache.org"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "dlr@finemaltcoding.com"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "ggregory@apache.org"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "jon@collab.net"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "julius@apache.org"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "rwaldhoff@apache.org"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "sanders@totalsync.com"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "tn@apache.org"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "tobrien@apache.org"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "bayard"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "chtompki"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "dgraham"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "dlr"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "ggregory"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "jon"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "julius"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "rwaldhoff"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "sanders"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "tn"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "tobrien"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Daniel Rall"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "David Graham"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Gary Gregory"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Henri Yandell"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Jon S. Stevens"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Julius Davies"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Rob Tompkins"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Rodney Waldhoff"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Scott Sanders"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Thomas Neidhart"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Tim OBrien"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer org URL",
+                            "value": "http:\/\/juliusdavies.ca\/"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "groupid",
-                            "value": "com.itextpdf"
+                            "value": "commons-codec"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGH",
                             "source": "pom",
                             "name": "name",
-                            "value": "iText - Bouncy Castle Connector"
+                            "value": "Apache Commons Codec"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "pom",
                             "name": "parent-artifactid",
-                            "value": "root"
+                            "value": "commons-parent"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "parent-groupid",
+                            "value": "org.apache.commons"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "url",
-                            "value": "https:\/\/itextpdf.com\/"
+                            "value": "https:\/\/commons.apache.org\/proper\/commons-codec\/"
                         }
                 ],
                 "productEvidence": [
@@ -1599,56 +1894,364 @@
                             "confidence": "HIGH",
                             "source": "file",
                             "name": "name",
-                            "value": "bouncy-castle-connector"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "bouncycastleconnector"
+                            "value": "commons-codec"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "itextpdf"
+                            "value": "apache"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "HIGHEST",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "codec"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "HIGHEST",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "commons"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "HIGHEST",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "encoder"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "automatic-module-name",
+                            "value": "org.apache.commons.codec"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "Manifest",
+                            "name": "bundle-docurl",
+                            "value": "https:\/\/commons.apache.org\/proper\/commons-codec\/"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "Bundle-Name",
+                            "value": "Apache Commons Codec"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "bundle-symbolicname",
+                            "value": "org.apache.commons.commons-codec"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "HIGH",
+                            "source": "Manifest",
+                            "name": "Implementation-Title",
+                            "value": "Apache Commons Codec"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "Manifest",
+                            "name": "implementation-url",
+                            "value": "https:\/\/commons.apache.org\/proper\/commons-codec\/"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "specification-title",
+                            "value": "Apache Commons Codec"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "artifactid",
-                            "value": "bouncy-castle-connector"
+                            "value": "commons-codec"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "bayard@apache.org"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "chtompki@apache.org"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "dgraham@apache.org"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "dlr@finemaltcoding.com"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "ggregory@apache.org"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "jon@collab.net"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "julius@apache.org"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "rwaldhoff@apache.org"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "sanders@totalsync.com"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "tn@apache.org"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "tobrien@apache.org"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "bayard"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "chtompki"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "dgraham"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "dlr"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "ggregory"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "jon"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "julius"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "rwaldhoff"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "sanders"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "tn"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer id",
+                            "value": "tobrien"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Daniel Rall"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "David Graham"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Gary Gregory"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Henri Yandell"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Jon S. Stevens"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Julius Davies"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Rob Tompkins"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Rodney Waldhoff"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Scott Sanders"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Thomas Neidhart"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Tim OBrien"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer org URL",
+                            "value": "http:\/\/juliusdavies.ca\/"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "groupid",
-                            "value": "com.itextpdf"
+                            "value": "commons-codec"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGH",
                             "source": "pom",
                             "name": "name",
-                            "value": "iText - Bouncy Castle Connector"
+                            "value": "Apache Commons Codec"
                     }
 ,{
                             "type": "product",
                             "confidence": "MEDIUM",
                             "source": "pom",
                             "name": "parent-artifactid",
-                            "value": "root"
+                            "value": "commons-parent"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "parent-groupid",
+                            "value": "org.apache.commons"
                     }
 ,{
                             "type": "product",
                             "confidence": "MEDIUM",
                             "source": "pom",
                             "name": "url",
-                            "value": "https:\/\/itextpdf.com\/"
+                            "value": "https:\/\/commons.apache.org\/proper\/commons-codec\/"
                     }
                 ],
                 "versionEvidence": [
@@ -1657,165 +2260,127 @@
                         "confidence": "HIGH",
                         "source": "file",
                         "name": "version",
-                        "value": "8.0.2"
+                        "value": "1.13"
+                    }
+,                    {
+                        "type": "version",
+                        "confidence": "HIGH",
+                        "source": "Manifest",
+                        "name": "Implementation-Version",
+                        "value": "1.13"
+                    }
+,                    {
+                        "type": "version",
+                        "confidence": "LOW",
+                        "source": "pom",
+                        "name": "parent-version",
+                        "value": "1.13"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "8.0.2"
+                        "value": "1.13"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/com.itextpdf\/bouncy-castle-connector@8.0.2"
+                        "id": "pkg:maven\/commons-codec\/commons-codec@1.13"
 ,"confidence": "HIGH"                    }
-            ]                ,"vulnerabilityIds": [
-                {
-                    "id": "cpe:2.3:a:itextpdf:itext:8.0.2:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Aitextpdf%3Aitext%3A8.0.2%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
             ]
-            ,"vulnerabilities": [
- {
-                "source": "NVD",
-                "name": "CVE-2023-6298",
-                    "severity" : "MEDIUM",
-                    "cvssv2": {
-                        "score": 5.0
-                        ,"accessVector": "NETWORK"
-                        ,"accessComplexity": "LOW"
-                        ,"authenticationr": "NONE"
-                        ,"confidentialityImpact": "NONE"
-                        ,"integrityImpact": "NONE"
-                        ,"availabilityImpact": "PARTIAL"
-                        ,"severity": "MEDIUM"
-,"version": "2.0","exploitabilityScore": "10.0","impactScore": "2.9"                    },
-                    "cvssv3": {
-                        "baseScore": 6.5
-                        ,"attackVector": "NETWORK"
-                        ,"attackComplexity": "LOW"
-                        ,"privilegesRequired": "NONE"
-                        ,"userInteraction": "REQUIRED"
-                        ,"scope": "UNCHANGED"
-                        ,"confidentialityImpact": "NONE"
-                        ,"integrityImpact": "NONE"
-                        ,"availabilityImpact": "HIGH"
-                        ,"baseSeverity": "MEDIUM"
-,"exploitabilityScore": "2.8","impactScore": "3.6","version": "3.1"                    },
-                    "cwes": [
-                        "CWE-129",                        "NVD-CWE-noinfo"                    ],
-                "description": "A vulnerability classified as problematic was found in Apryse iText 8.0.2. This vulnerability affects the function main of the file PdfDocument.java. The manipulation leads to improper validation of array index. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The identifier of this vulnerability is VDB-246124. NOTE: The vendor was contacted early about this disclosure but did not respond in any way. A statement published afterwards explains that the exception is not a vulnerability and the identified CWEs might not apply to the software.",
-                "notes": "",
-                "references": [
- {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/drive.google.com\/drive\/folders\/1OBAeGH_rNfa1os6g6QlIt4pL-2NKHZm_?usp=sharing","name": "EXPLOIT,THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/kb.itextpdf.com\/itext\/statement-regarding-cve-2022-24198-and-2023-6298","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/drive.google.com\/drive\/folders\/1OBAeGH_rNfa1os6g6QlIt4pL-2NKHZm_?usp=sharing","name": "EXPLOIT,THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/vuldb.com\/?ctiid.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/vuldb.com\/?id.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/kb.itextpdf.com\/itext\/statement-regarding-cve-2022-24198-and-2023-6298","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/vuldb.com\/?id.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/vuldb.com\/?ctiid.246124","name": "THIRD_PARTY_ADVISORY"                    }                ],
-                "vulnerableSoftware": [
- {
-                        "software": { 
-                            "id":"cpe:2.3:a:itextpdf:itext:8.0.2:*:*:*:*:*:*:*"
-,"vulnerabilityIdMatched":"true"                        }
-                    }                ]
-                }            ]        },{
+        },{
             "isVirtual": false,
-            "fileName": "commons-8.0.2.jar",
-            "filePath": "\/github\/workspace\/omod\/target\/billing-2.3.0-SNAPSHOT\/lib\/commons-8.0.2.jar"
-,"md5": "52f062d0e2df63bb8608139579fcc909",
-            "sha1": "8387ef8346202c756d155f85255ef5cba2dfca5f",
-            "sha256": "5109c0dd229442e590d49c476694312bcb6ab461ab46eafad9296fc25be89be7"            ,"evidenceCollected": {
+            "fileName": "core-3.4.0.jar",
+            "filePath": "\/github\/workspace\/omod\/target\/authentication-2.3.0-SNAPSHOT\/lib\/core-3.4.0.jar"
+,"md5": "8542da29497cf33e80d7630e62d58a81",
+            "sha1": "5264296c46634347890ec9250bc65f14b7362bf8",
+            "sha256": "65004806a669234c698fbe0755258100375fb01fe93b538455f3903713d4a50d","description": "Core barcode encoding\/decoding library","license": "\"The Apache Software License, Version 2.0\";link=\"https:\/\/www.apache.org\/licenses\/LICENSE-2.0.txt\""            ,"evidenceCollected": {
                 "vendorEvidence": [
 {
                             "type": "vendor",
                             "confidence": "HIGH",
                             "source": "file",
                             "name": "name",
-                            "value": "commons"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "bouncycastle"
+                            "value": "core"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "commons"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "commons"
+                            "value": "google"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "itextpdf"
+                            "value": "zxing"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "automatic-module-name",
+                            "value": "com.google.zxing"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "itextpdf"
+                            "source": "Manifest",
+                            "name": "build-jdk-spec",
+                            "value": "1.8"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "Manifest",
+                            "name": "bundle-developers",
+                            "value": "zxing-authors;name=\"ZXing Authors\""
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "Manifest",
+                            "name": "bundle-docurl",
+                            "value": "https:\/\/github.com\/zxing\/zxing\/core"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "bundle-symbolicname",
+                            "value": "com.google.zxing.core"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "pom",
                             "name": "artifactid",
-                            "value": "commons"
+                            "value": "core"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "groupid",
-                            "value": "com.itextpdf"
+                            "value": "com.google.zxing"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGH",
                             "source": "pom",
                             "name": "name",
-                            "value": "iText - commons"
+                            "value": "ZXing Core"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "pom",
                             "name": "parent-artifactid",
-                            "value": "root"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "HIGHEST",
-                            "source": "pom",
-                            "name": "url",
-                            "value": "https:\/\/itextpdf.com\/"
+                            "value": "zxing-parent"
                         }
                 ],
                 "productEvidence": [
@@ -1824,70 +2389,91 @@
                             "confidence": "HIGH",
                             "source": "file",
                             "name": "name",
-                            "value": "commons"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "bouncycastle"
+                            "value": "core"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "commons"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "commons"
+                            "value": "google"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "itextpdf"
+                            "value": "zxing"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "automatic-module-name",
+                            "value": "com.google.zxing"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "Manifest",
+                            "name": "build-jdk-spec",
+                            "value": "1.8"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "Manifest",
+                            "name": "bundle-developers",
+                            "value": "zxing-authors;name=\"ZXing Authors\""
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "Manifest",
+                            "name": "bundle-docurl",
+                            "value": "https:\/\/github.com\/zxing\/zxing\/core"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "Bundle-Name",
+                            "value": "ZXing Core"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "bundle-symbolicname",
+                            "value": "com.google.zxing.core"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "artifactid",
-                            "value": "commons"
+                            "value": "core"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "groupid",
-                            "value": "com.itextpdf"
+                            "value": "com.google.zxing"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGH",
                             "source": "pom",
                             "name": "name",
-                            "value": "iText - commons"
+                            "value": "ZXing Core"
                     }
 ,{
                             "type": "product",
                             "confidence": "MEDIUM",
                             "source": "pom",
                             "name": "parent-artifactid",
-                            "value": "root"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "MEDIUM",
-                            "source": "pom",
-                            "name": "url",
-                            "value": "https:\/\/itextpdf.com\/"
+                            "value": "zxing-parent"
                     }
                 ],
                 "versionEvidence": [
@@ -1896,130 +2482,162 @@
                         "confidence": "HIGH",
                         "source": "file",
                         "name": "version",
-                        "value": "8.0.2"
+                        "value": "3.4.0"
+                    }
+,                    {
+                        "type": "version",
+                        "confidence": "HIGH",
+                        "source": "Manifest",
+                        "name": "Bundle-Version",
+                        "value": "3.4.0"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "8.0.2"
+                        "value": "3.4.0"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/com.itextpdf\/commons@8.0.2"
+                        "id": "pkg:maven\/com.google.zxing\/core@3.4.0"
 ,"confidence": "HIGH"                    }
-            ]                ,"vulnerabilityIds": [
-                {
-                    "id": "cpe:2.3:a:itextpdf:itext:8.0.2:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Aitextpdf%3Aitext%3A8.0.2%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
             ]
-            ,"vulnerabilities": [
- {
-                "source": "NVD",
-                "name": "CVE-2023-6298",
-                    "severity" : "MEDIUM",
-                    "cvssv2": {
-                        "score": 5.0
-                        ,"accessVector": "NETWORK"
-                        ,"accessComplexity": "LOW"
-                        ,"authenticationr": "NONE"
-                        ,"confidentialityImpact": "NONE"
-                        ,"integrityImpact": "NONE"
-                        ,"availabilityImpact": "PARTIAL"
-                        ,"severity": "MEDIUM"
-,"version": "2.0","exploitabilityScore": "10.0","impactScore": "2.9"                    },
-                    "cvssv3": {
-                        "baseScore": 6.5
-                        ,"attackVector": "NETWORK"
-                        ,"attackComplexity": "LOW"
-                        ,"privilegesRequired": "NONE"
-                        ,"userInteraction": "REQUIRED"
-                        ,"scope": "UNCHANGED"
-                        ,"confidentialityImpact": "NONE"
-                        ,"integrityImpact": "NONE"
-                        ,"availabilityImpact": "HIGH"
-                        ,"baseSeverity": "MEDIUM"
-,"exploitabilityScore": "2.8","impactScore": "3.6","version": "3.1"                    },
-                    "cwes": [
-                        "CWE-129",                        "NVD-CWE-noinfo"                    ],
-                "description": "A vulnerability classified as problematic was found in Apryse iText 8.0.2. This vulnerability affects the function main of the file PdfDocument.java. The manipulation leads to improper validation of array index. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The identifier of this vulnerability is VDB-246124. NOTE: The vendor was contacted early about this disclosure but did not respond in any way. A statement published afterwards explains that the exception is not a vulnerability and the identified CWEs might not apply to the software.",
-                "notes": "",
-                "references": [
- {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/drive.google.com\/drive\/folders\/1OBAeGH_rNfa1os6g6QlIt4pL-2NKHZm_?usp=sharing","name": "EXPLOIT,THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/kb.itextpdf.com\/itext\/statement-regarding-cve-2022-24198-and-2023-6298","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/drive.google.com\/drive\/folders\/1OBAeGH_rNfa1os6g6QlIt4pL-2NKHZm_?usp=sharing","name": "EXPLOIT,THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/vuldb.com\/?ctiid.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/vuldb.com\/?id.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/kb.itextpdf.com\/itext\/statement-regarding-cve-2022-24198-and-2023-6298","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/vuldb.com\/?id.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/vuldb.com\/?ctiid.246124","name": "THIRD_PARTY_ADVISORY"                    }                ],
-                "vulnerableSoftware": [
- {
-                        "software": { 
-                            "id":"cpe:2.3:a:itextpdf:itext:8.0.2:*:*:*:*:*:*:*"
-,"vulnerabilityIdMatched":"true"                        }
-                    }                ]
-                }            ]        },{
+        },{
             "isVirtual": false,
-            "fileName": "font-asian-8.0.2.jar",
-            "filePath": "\/github\/workspace\/omod\/target\/billing-2.3.0-SNAPSHOT\/lib\/font-asian-8.0.2.jar"
-,"md5": "e84dca77bf83e9111e7a10296dfb94d6",
-            "sha1": "da11a2e99685104bd49c58f6aca479acb8d0edef",
-            "sha256": "4d3accbb1b563eaed7da21af5915575d128fa50fdbc85b965052abdac514b489","description": "iText Asian fonts for use in conjunction with iText, a free Java-PDF library","license": "Various licenses (see individual files)"            ,"evidenceCollected": {
+            "fileName": "jai-imageio-core-1.4.0.jar",
+            "filePath": "\/github\/workspace\/omod\/target\/authentication-2.3.0-SNAPSHOT\/lib\/jai-imageio-core-1.4.0.jar"
+,"md5": "6978d733bfb55c0a82639f724fe5f3bb",
+            "sha1": "fb6d79b929556362a241b2f65a04e538062f0077",
+            "sha256": "8ad3c68e9efffb10ac87ff8bc589adf64b04a729c5194c079efd0643607fd72a","description": "\n    Java Advanced Imaging Image I\/O Tools API core, but without the classes \n    involved with javax.media.jai dependencies, JPEG2000 or \n    codecLibJIIO, meaning that this library can be distributed under the \n    modified BSD license and should be GPL compatible.\n  ","license": "BSD 3-clause License w\/nuclear disclaimer: LICENSE.txt"            ,"evidenceCollected": {
                 "vendorEvidence": [
 {
                             "type": "vendor",
                             "confidence": "HIGH",
                             "source": "file",
                             "name": "name",
-                            "value": "font-asian"
+                            "value": "jai-imageio-core"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "HIGHEST",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "github"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "Manifest",
+                            "name": "bundle-docurl",
+                            "value": "https:\/\/github.com\/jai-imageio\/"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "bundle-symbolicname",
+                            "value": "jai-imageio-core"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "extension-name",
+                            "value": "com.github.jai-imageio-jai-imageio-core"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "HIGH",
+                            "source": "Manifest",
+                            "name": "Implementation-Vendor",
+                            "value": "https:\/\/github.com\/jai-imageio\/ jai-imageio GitHub group"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "Manifest",
+                            "name": "specification-vendor",
+                            "value": "Sun Microsystems, Inc."
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "Manifest",
+                            "name": "url",
+                            "value": "https:\/\/github.com\/jai-imageio\/jai-imageio-core"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "pom",
                             "name": "artifactid",
-                            "value": "font-asian"
+                            "value": "jai-imageio-core"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "stian@s11.no"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Stian Soiland-Reyes"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer org",
+                            "value": "s11"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer org URL",
+                            "value": "http:\/\/s11.no\/"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "groupid",
-                            "value": "com.itextpdf"
+                            "value": "com.github.jai-imageio"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGH",
                             "source": "pom",
                             "name": "name",
-                            "value": "iText - Asian fonts"
+                            "value": "Java Advanced Imaging Image I\/O Tools API core (standalone)"
                         }
 ,{
                             "type": "vendor",
-                            "confidence": "LOW",
+                            "confidence": "HIGH",
                             "source": "pom",
-                            "name": "parent-artifactid",
-                            "value": "root"
+                            "name": "organization name",
+                            "value": "jai-imageio GitHub group"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "organization url",
+                            "value": "jai-imageio\/"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "url",
-                            "value": "https:\/\/itextpdf.com\/"
+                            "value": "jai-imageio\/jai-imageio-core"
                         }
                 ],
                 "productEvidence": [
@@ -2028,42 +2646,133 @@
                             "confidence": "HIGH",
                             "source": "file",
                             "name": "name",
-                            "value": "font-asian"
+                            "value": "jai-imageio-core"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "HIGHEST",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "github"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "Manifest",
+                            "name": "bundle-docurl",
+                            "value": "https:\/\/github.com\/jai-imageio\/"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "Bundle-Name",
+                            "value": "Java Advanced Imaging Image I\/O Tools API core (standalone)"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "bundle-symbolicname",
+                            "value": "jai-imageio-core"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "extension-name",
+                            "value": "com.github.jai-imageio-jai-imageio-core"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "HIGH",
+                            "source": "Manifest",
+                            "name": "Implementation-Title",
+                            "value": "Java Advanced Imaging Image I\/O Tools API core (standalone)"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "specification-title",
+                            "value": "Java Advanced Imaging"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "Manifest",
+                            "name": "url",
+                            "value": "https:\/\/github.com\/jai-imageio\/jai-imageio-core"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "artifactid",
-                            "value": "font-asian"
+                            "value": "jai-imageio-core"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "stian@s11.no"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Stian Soiland-Reyes"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer org",
+                            "value": "s11"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer org URL",
+                            "value": "http:\/\/s11.no\/"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "groupid",
-                            "value": "com.itextpdf"
+                            "value": "com.github.jai-imageio"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGH",
                             "source": "pom",
                             "name": "name",
-                            "value": "iText - Asian fonts"
+                            "value": "Java Advanced Imaging Image I\/O Tools API core (standalone)"
                     }
 ,{
                             "type": "product",
-                            "confidence": "MEDIUM",
+                            "confidence": "LOW",
                             "source": "pom",
-                            "name": "parent-artifactid",
-                            "value": "root"
+                            "name": "organization name",
+                            "value": "jai-imageio GitHub group"
                     }
 ,{
                             "type": "product",
-                            "confidence": "MEDIUM",
+                            "confidence": "HIGH",
                             "source": "pom",
                             "name": "url",
-                            "value": "https:\/\/itextpdf.com\/"
+                            "value": "jai-imageio\/"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "HIGH",
+                            "source": "pom",
+                            "name": "url",
+                            "value": "jai-imageio\/jai-imageio-core"
                     }
                 ],
                 "versionEvidence": [
@@ -2072,165 +2781,106 @@
                         "confidence": "HIGH",
                         "source": "file",
                         "name": "version",
-                        "value": "8.0.2"
+                        "value": "1.4.0"
+                    }
+,                    {
+                        "type": "version",
+                        "confidence": "HIGH",
+                        "source": "Manifest",
+                        "name": "Bundle-Version",
+                        "value": "1.4.0"
+                    }
+,                    {
+                        "type": "version",
+                        "confidence": "HIGH",
+                        "source": "Manifest",
+                        "name": "Implementation-Version",
+                        "value": "1.4.0"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "8.0.2"
+                        "value": "1.4.0"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/com.itextpdf\/font-asian@8.0.2"
+                        "id": "pkg:maven\/com.github.jai-imageio\/jai-imageio-core@1.4.0"
 ,"confidence": "HIGH"                    }
-            ]                ,"vulnerabilityIds": [
-                {
-                    "id": "cpe:2.3:a:itextpdf:itext:8.0.2:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Aitextpdf%3Aitext%3A8.0.2%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
             ]
-            ,"vulnerabilities": [
- {
-                "source": "NVD",
-                "name": "CVE-2023-6298",
-                    "severity" : "MEDIUM",
-                    "cvssv2": {
-                        "score": 5.0
-                        ,"accessVector": "NETWORK"
-                        ,"accessComplexity": "LOW"
-                        ,"authenticationr": "NONE"
-                        ,"confidentialityImpact": "NONE"
-                        ,"integrityImpact": "NONE"
-                        ,"availabilityImpact": "PARTIAL"
-                        ,"severity": "MEDIUM"
-,"version": "2.0","exploitabilityScore": "10.0","impactScore": "2.9"                    },
-                    "cvssv3": {
-                        "baseScore": 6.5
-                        ,"attackVector": "NETWORK"
-                        ,"attackComplexity": "LOW"
-                        ,"privilegesRequired": "NONE"
-                        ,"userInteraction": "REQUIRED"
-                        ,"scope": "UNCHANGED"
-                        ,"confidentialityImpact": "NONE"
-                        ,"integrityImpact": "NONE"
-                        ,"availabilityImpact": "HIGH"
-                        ,"baseSeverity": "MEDIUM"
-,"exploitabilityScore": "2.8","impactScore": "3.6","version": "3.1"                    },
-                    "cwes": [
-                        "CWE-129",                        "NVD-CWE-noinfo"                    ],
-                "description": "A vulnerability classified as problematic was found in Apryse iText 8.0.2. This vulnerability affects the function main of the file PdfDocument.java. The manipulation leads to improper validation of array index. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The identifier of this vulnerability is VDB-246124. NOTE: The vendor was contacted early about this disclosure but did not respond in any way. A statement published afterwards explains that the exception is not a vulnerability and the identified CWEs might not apply to the software.",
-                "notes": "",
-                "references": [
- {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/drive.google.com\/drive\/folders\/1OBAeGH_rNfa1os6g6QlIt4pL-2NKHZm_?usp=sharing","name": "EXPLOIT,THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/kb.itextpdf.com\/itext\/statement-regarding-cve-2022-24198-and-2023-6298","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/drive.google.com\/drive\/folders\/1OBAeGH_rNfa1os6g6QlIt4pL-2NKHZm_?usp=sharing","name": "EXPLOIT,THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/vuldb.com\/?ctiid.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/vuldb.com\/?id.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/kb.itextpdf.com\/itext\/statement-regarding-cve-2022-24198-and-2023-6298","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/vuldb.com\/?id.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/vuldb.com\/?ctiid.246124","name": "THIRD_PARTY_ADVISORY"                    }                ],
-                "vulnerableSoftware": [
- {
-                        "software": { 
-                            "id":"cpe:2.3:a:itextpdf:itext:8.0.2:*:*:*:*:*:*:*"
-,"vulnerabilityIdMatched":"true"                        }
-                    }                ]
-                }            ]        },{
+        },{
             "isVirtual": false,
-            "fileName": "io-8.0.2.jar",
-            "filePath": "\/github\/workspace\/omod\/target\/billing-2.3.0-SNAPSHOT\/lib\/io-8.0.2.jar"
-,"md5": "142866f87b4995f2b179f2672feefdf3",
-            "sha1": "3489fa695eb6f3e5beec6cfeb68ed145311f4560",
-            "sha256": "f9ac22a383216f985095cc9ad8a01054c0592e1a70b066fe352f01c4389c862e"            ,"evidenceCollected": {
+            "fileName": "javase-3.4.0.jar",
+            "filePath": "\/github\/workspace\/omod\/target\/authentication-2.3.0-SNAPSHOT\/lib\/javase-3.4.0.jar"
+,"md5": "fd431a1d523512b68c4642a2a5fed474",
+            "sha1": "8be20100f28515037a31cc0bbe557501c0538147",
+            "sha256": "7aeef746a544effcd9e499214d9f315e69c3a835e7c81abfb703be79f859a6d7","description": "Java SE-specific extensions to core ZXing library"            ,"evidenceCollected": {
                 "vendorEvidence": [
 {
                             "type": "vendor",
                             "confidence": "HIGH",
                             "source": "file",
                             "name": "name",
-                            "value": "io"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "font"
+                            "value": "javase"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "io"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "io"
+                            "value": "google"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "itextpdf"
+                            "value": "zxing"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "automatic-module-name",
+                            "value": "com.google.zxing.javase"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "itextpdf"
+                            "source": "Manifest",
+                            "name": "build-jdk-spec",
+                            "value": "1.8"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "pom",
                             "name": "artifactid",
-                            "value": "io"
+                            "value": "javase"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "groupid",
-                            "value": "com.itextpdf"
+                            "value": "com.google.zxing"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGH",
                             "source": "pom",
                             "name": "name",
-                            "value": "iText - io"
+                            "value": "ZXing Java SE extensions"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "pom",
                             "name": "parent-artifactid",
-                            "value": "root"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "HIGHEST",
-                            "source": "pom",
-                            "name": "url",
-                            "value": "https:\/\/itextpdf.com\/"
+                            "value": "zxing-parent"
                         }
                 ],
                 "productEvidence": [
@@ -2239,70 +2889,63 @@
                             "confidence": "HIGH",
                             "source": "file",
                             "name": "name",
-                            "value": "io"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "font"
+                            "value": "javase"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "io"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "io"
+                            "value": "google"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "itextpdf"
+                            "value": "zxing"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "automatic-module-name",
+                            "value": "com.google.zxing.javase"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "Manifest",
+                            "name": "build-jdk-spec",
+                            "value": "1.8"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "artifactid",
-                            "value": "io"
+                            "value": "javase"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "groupid",
-                            "value": "com.itextpdf"
+                            "value": "com.google.zxing"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGH",
                             "source": "pom",
                             "name": "name",
-                            "value": "iText - io"
+                            "value": "ZXing Java SE extensions"
                     }
 ,{
                             "type": "product",
                             "confidence": "MEDIUM",
                             "source": "pom",
                             "name": "parent-artifactid",
-                            "value": "root"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "MEDIUM",
-                            "source": "pom",
-                            "name": "url",
-                            "value": "https:\/\/itextpdf.com\/"
+                            "value": "zxing-parent"
                     }
                 ],
                 "versionEvidence": [
@@ -2311,397 +2954,356 @@
                         "confidence": "HIGH",
                         "source": "file",
                         "name": "version",
-                        "value": "8.0.2"
+                        "value": "3.4.0"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "8.0.2"
+                        "value": "3.4.0"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/com.itextpdf\/io@8.0.2"
+                        "id": "pkg:maven\/com.google.zxing\/javase@3.4.0"
 ,"confidence": "HIGH"                    }
-            ]                ,"vulnerabilityIds": [
-                {
-                    "id": "cpe:2.3:a:itextpdf:itext:8.0.2:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Aitextpdf%3Aitext%3A8.0.2%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
             ]
-            ,"vulnerabilities": [
- {
-                "source": "NVD",
-                "name": "CVE-2023-6298",
-                    "severity" : "MEDIUM",
-                    "cvssv2": {
-                        "score": 5.0
-                        ,"accessVector": "NETWORK"
-                        ,"accessComplexity": "LOW"
-                        ,"authenticationr": "NONE"
-                        ,"confidentialityImpact": "NONE"
-                        ,"integrityImpact": "NONE"
-                        ,"availabilityImpact": "PARTIAL"
-                        ,"severity": "MEDIUM"
-,"version": "2.0","exploitabilityScore": "10.0","impactScore": "2.9"                    },
-                    "cvssv3": {
-                        "baseScore": 6.5
-                        ,"attackVector": "NETWORK"
-                        ,"attackComplexity": "LOW"
-                        ,"privilegesRequired": "NONE"
-                        ,"userInteraction": "REQUIRED"
-                        ,"scope": "UNCHANGED"
-                        ,"confidentialityImpact": "NONE"
-                        ,"integrityImpact": "NONE"
-                        ,"availabilityImpact": "HIGH"
-                        ,"baseSeverity": "MEDIUM"
-,"exploitabilityScore": "2.8","impactScore": "3.6","version": "3.1"                    },
-                    "cwes": [
-                        "CWE-129",                        "NVD-CWE-noinfo"                    ],
-                "description": "A vulnerability classified as problematic was found in Apryse iText 8.0.2. This vulnerability affects the function main of the file PdfDocument.java. The manipulation leads to improper validation of array index. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The identifier of this vulnerability is VDB-246124. NOTE: The vendor was contacted early about this disclosure but did not respond in any way. A statement published afterwards explains that the exception is not a vulnerability and the identified CWEs might not apply to the software.",
-                "notes": "",
-                "references": [
- {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/drive.google.com\/drive\/folders\/1OBAeGH_rNfa1os6g6QlIt4pL-2NKHZm_?usp=sharing","name": "EXPLOIT,THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/kb.itextpdf.com\/itext\/statement-regarding-cve-2022-24198-and-2023-6298","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/drive.google.com\/drive\/folders\/1OBAeGH_rNfa1os6g6QlIt4pL-2NKHZm_?usp=sharing","name": "EXPLOIT,THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/vuldb.com\/?ctiid.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/vuldb.com\/?id.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/kb.itextpdf.com\/itext\/statement-regarding-cve-2022-24198-and-2023-6298","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/vuldb.com\/?id.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/vuldb.com\/?ctiid.246124","name": "THIRD_PARTY_ADVISORY"                    }                ],
-                "vulnerableSoftware": [
- {
-                        "software": { 
-                            "id":"cpe:2.3:a:itextpdf:itext:8.0.2:*:*:*:*:*:*:*"
-,"vulnerabilityIdMatched":"true"                        }
-                    }                ]
-                }            ]        },{
+        },{
             "isVirtual": false,
-            "fileName": "kernel-8.0.2.jar",
-            "filePath": "\/github\/workspace\/omod\/target\/billing-2.3.0-SNAPSHOT\/lib\/kernel-8.0.2.jar"
-,"md5": "e97af211d8ddb93cc220300f1e2078ce",
-            "sha1": "a0a8982cefd2e3d57f8e47603534b2b6c5768fa0",
-            "sha256": "2e2c296b0d24a458e902fc8c0ab6cd5409d542da91f180b57ac70f569b02cbd8"            ,"evidenceCollected": {
+            "fileName": "jcommander-1.72.jar",
+            "filePath": "\/github\/workspace\/omod\/target\/authentication-2.3.0-SNAPSHOT\/lib\/jcommander-1.72.jar"
+,"md5": "9fde6bc0ba1032eceb7267fd1ad1657b",
+            "sha1": "6375e521c1e11d6563d4f25a07ce124ccf8cd171",
+            "sha256": "e0de160b129b2414087e01fe845609cd55caec6820cfd4d0c90fabcc7bdb8c1e","description": "Command line parsing","license": "Apache 2.0: http:\/\/www.apache.org\/licenses\/LICENSE-2.0"            ,"evidenceCollected": {
                 "vendorEvidence": [
 {
+                            "type": "vendor",
+                            "confidence": "HIGHEST",
+                            "source": "central",
+                            "name": "artifactid",
+                            "value": "jcommander"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "HIGHEST",
+                            "source": "central",
+                            "name": "groupid",
+                            "value": "com.beust"
+                        }
+,{
                             "type": "vendor",
                             "confidence": "HIGH",
                             "source": "file",
                             "name": "name",
-                            "value": "kernel"
+                            "value": "jcommander"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "beust"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "itextpdf"
+                            "value": "jcommander"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "jar",
                             "name": "package name",
-                            "value": "itextpdf"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "HIGHEST",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "kernel"
+                            "value": "jcommander"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "kernel"
+                            "source": "Manifest",
+                            "name": "build-date",
+                            "value": "2017-05-15"
                         }
 ,{
                             "type": "vendor",
-                            "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "pdf"
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "bundle-symbolicname",
+                            "value": "jcommander"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "pom",
                             "name": "artifactid",
-                            "value": "kernel"
+                            "value": "jcommander"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "cedric@beust.com"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "MEDIUM",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Cedric Beust"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "groupid",
-                            "value": "com.itextpdf"
+                            "value": "com.beust"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGH",
                             "source": "pom",
                             "name": "name",
-                            "value": "iText - kernel"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "LOW",
-                            "source": "pom",
-                            "name": "parent-artifactid",
-                            "value": "root"
+                            "value": "jcommander"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "url",
-                            "value": "https:\/\/itextpdf.com\/"
+                            "value": "http:\/\/jcommander.org"
                         }
                 ],
                 "productEvidence": [
 {
                             "type": "product",
+                            "confidence": "HIGHEST",
+                            "source": "central",
+                            "name": "artifactid",
+                            "value": "jcommander"
+                    }
+,{
+                            "type": "product",
                             "confidence": "HIGH",
                             "source": "file",
                             "name": "name",
-                            "value": "kernel"
+                            "value": "jcommander"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "itextpdf"
+                            "value": "beust"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "kernel"
+                            "value": "jcommander"
                     }
 ,{
                             "type": "product",
                             "confidence": "LOW",
                             "source": "jar",
                             "name": "package name",
-                            "value": "kernel"
+                            "value": "jcommander"
                     }
 ,{
                             "type": "product",
                             "confidence": "LOW",
-                            "source": "jar",
-                            "name": "package name",
-                            "value": "pdf"
+                            "source": "Manifest",
+                            "name": "build-date",
+                            "value": "2017-05-15"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "Bundle-Name",
+                            "value": "com.beust.jcommander"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "MEDIUM",
+                            "source": "Manifest",
+                            "name": "bundle-symbolicname",
+                            "value": "jcommander"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "artifactid",
-                            "value": "kernel"
+                            "value": "jcommander"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer email",
+                            "value": "cedric@beust.com"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "pom",
+                            "name": "developer name",
+                            "value": "Cedric Beust"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "groupid",
-                            "value": "com.itextpdf"
+                            "value": "com.beust"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGH",
                             "source": "pom",
                             "name": "name",
-                            "value": "iText - kernel"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "MEDIUM",
-                            "source": "pom",
-                            "name": "parent-artifactid",
-                            "value": "root"
+                            "value": "jcommander"
                     }
 ,{
                             "type": "product",
                             "confidence": "MEDIUM",
                             "source": "pom",
                             "name": "url",
-                            "value": "https:\/\/itextpdf.com\/"
+                            "value": "http:\/\/jcommander.org"
                     }
                 ],
                 "versionEvidence": [
                     {
                         "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "central",
+                        "name": "version",
+                        "value": "1.72"
+                    }
+,                    {
+                        "type": "version",
                         "confidence": "HIGH",
                         "source": "file",
                         "name": "version",
-                        "value": "8.0.2"
+                        "value": "1.72"
+                    }
+,                    {
+                        "type": "version",
+                        "confidence": "HIGH",
+                        "source": "Manifest",
+                        "name": "Bundle-Version",
+                        "value": "1.72"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "8.0.2"
+                        "value": "1.72"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/com.itextpdf\/kernel@8.0.2"
+                        "id": "pkg:maven\/com.beust\/jcommander@1.72"
 ,"confidence": "HIGH"                    }
-            ]                ,"vulnerabilityIds": [
-                {
-                    "id": "cpe:2.3:a:itextpdf:itext:8.0.2:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Aitextpdf%3Aitext%3A8.0.2%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
             ]
-            ,"vulnerabilities": [
- {
-                "source": "NVD",
-                "name": "CVE-2023-6298",
-                    "severity" : "MEDIUM",
-                    "cvssv2": {
-                        "score": 5.0
-                        ,"accessVector": "NETWORK"
-                        ,"accessComplexity": "LOW"
-                        ,"authenticationr": "NONE"
-                        ,"confidentialityImpact": "NONE"
-                        ,"integrityImpact": "NONE"
-                        ,"availabilityImpact": "PARTIAL"
-                        ,"severity": "MEDIUM"
-,"version": "2.0","exploitabilityScore": "10.0","impactScore": "2.9"                    },
-                    "cvssv3": {
-                        "baseScore": 6.5
-                        ,"attackVector": "NETWORK"
-                        ,"attackComplexity": "LOW"
-                        ,"privilegesRequired": "NONE"
-                        ,"userInteraction": "REQUIRED"
-                        ,"scope": "UNCHANGED"
-                        ,"confidentialityImpact": "NONE"
-                        ,"integrityImpact": "NONE"
-                        ,"availabilityImpact": "HIGH"
-                        ,"baseSeverity": "MEDIUM"
-,"exploitabilityScore": "2.8","impactScore": "3.6","version": "3.1"                    },
-                    "cwes": [
-                        "CWE-129",                        "NVD-CWE-noinfo"                    ],
-                "description": "A vulnerability classified as problematic was found in Apryse iText 8.0.2. This vulnerability affects the function main of the file PdfDocument.java. The manipulation leads to improper validation of array index. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The identifier of this vulnerability is VDB-246124. NOTE: The vendor was contacted early about this disclosure but did not respond in any way. A statement published afterwards explains that the exception is not a vulnerability and the identified CWEs might not apply to the software.",
-                "notes": "",
-                "references": [
- {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/drive.google.com\/drive\/folders\/1OBAeGH_rNfa1os6g6QlIt4pL-2NKHZm_?usp=sharing","name": "EXPLOIT,THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/kb.itextpdf.com\/itext\/statement-regarding-cve-2022-24198-and-2023-6298","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/drive.google.com\/drive\/folders\/1OBAeGH_rNfa1os6g6QlIt4pL-2NKHZm_?usp=sharing","name": "EXPLOIT,THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/vuldb.com\/?ctiid.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/vuldb.com\/?id.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/kb.itextpdf.com\/itext\/statement-regarding-cve-2022-24198-and-2023-6298","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/vuldb.com\/?id.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/vuldb.com\/?ctiid.246124","name": "THIRD_PARTY_ADVISORY"                    }                ],
-                "vulnerableSoftware": [
- {
-                        "software": { 
-                            "id":"cpe:2.3:a:itextpdf:itext:8.0.2:*:*:*:*:*:*:*"
-,"vulnerabilityIdMatched":"true"                        }
-                    }                ]
-                }            ]        },{
+        },{
             "isVirtual": false,
-            "fileName": "layout-8.0.2.jar",
-            "filePath": "\/github\/workspace\/omod\/target\/billing-2.3.0-SNAPSHOT\/lib\/layout-8.0.2.jar"
-,"md5": "0178ae3034e317fcf36fd202c9b8726e",
-            "sha1": "01df3cc35b5c6a477b101972fec6cf3742237d49",
-            "sha256": "92fbcbef55d8a01f8ced71b377bfba19d90e907b0943c1b6510c6d7327ccd92b"            ,"evidenceCollected": {
+            "fileName": "totp-1.7.1.jar",
+            "filePath": "\/github\/workspace\/omod\/target\/authentication-2.3.0-SNAPSHOT\/lib\/totp-1.7.1.jar"
+,"md5": "ceaed46be1e655c451d11cc5cb33e4ff",
+            "sha1": "c2bcced6c255d48223f5626c4db9af9aa9d43c35",
+            "sha256": "f02b3fcab62298907d655acc54c0dc85f7103dc26cee95eed44ebe6fc2af3415","description": "A library to help implement time-based one time passwords to enable MFA."            ,"evidenceCollected": {
                 "vendorEvidence": [
 {
                             "type": "vendor",
                             "confidence": "HIGH",
                             "source": "file",
                             "name": "name",
-                            "value": "layout"
+                            "value": "totp"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "itextpdf"
+                            "value": "dev"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "jar",
                             "name": "package name",
-                            "value": "itextpdf"
+                            "value": "dev"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "layout"
+                            "value": "samstevens"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "jar",
                             "name": "package name",
-                            "value": "layout"
+                            "value": "samstevens"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "HIGHEST",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "time"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "HIGHEST",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "totp"
+                        }
+,{
+                            "type": "vendor",
+                            "confidence": "LOW",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "totp"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "pom",
                             "name": "artifactid",
-                            "value": "layout"
+                            "value": "totp"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "groupid",
-                            "value": "com.itextpdf"
+                            "value": "dev.samstevens.totp"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "HIGH",
                             "source": "pom",
                             "name": "name",
-                            "value": "iText - layout"
+                            "value": ":"
                         }
 ,{
                             "type": "vendor",
                             "confidence": "LOW",
                             "source": "pom",
                             "name": "parent-artifactid",
-                            "value": "root"
-                        }
-,{
-                            "type": "vendor",
-                            "confidence": "HIGHEST",
-                            "source": "pom",
-                            "name": "url",
-                            "value": "https:\/\/itextpdf.com\/"
+                            "value": "totp-parent"
                         }
                 ],
                 "productEvidence": [
@@ -2710,63 +3312,77 @@
                             "confidence": "HIGH",
                             "source": "file",
                             "name": "name",
-                            "value": "layout"
+                            "value": "totp"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "itextpdf"
+                            "value": "dev"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "jar",
                             "name": "package name",
-                            "value": "layout"
+                            "value": "samstevens"
                     }
 ,{
                             "type": "product",
                             "confidence": "LOW",
                             "source": "jar",
                             "name": "package name",
-                            "value": "layout"
+                            "value": "samstevens"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "HIGHEST",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "time"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "HIGHEST",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "totp"
+                    }
+,{
+                            "type": "product",
+                            "confidence": "LOW",
+                            "source": "jar",
+                            "name": "package name",
+                            "value": "totp"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "artifactid",
-                            "value": "layout"
+                            "value": "totp"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGHEST",
                             "source": "pom",
                             "name": "groupid",
-                            "value": "com.itextpdf"
+                            "value": "dev.samstevens.totp"
                     }
 ,{
                             "type": "product",
                             "confidence": "HIGH",
                             "source": "pom",
                             "name": "name",
-                            "value": "iText - layout"
+                            "value": ":"
                     }
 ,{
                             "type": "product",
                             "confidence": "MEDIUM",
                             "source": "pom",
                             "name": "parent-artifactid",
-                            "value": "root"
-                    }
-,{
-                            "type": "product",
-                            "confidence": "MEDIUM",
-                            "source": "pom",
-                            "name": "url",
-                            "value": "https:\/\/itextpdf.com\/"
+                            "value": "totp-parent"
                     }
                 ],
                 "versionEvidence": [
@@ -2775,80 +3391,25 @@
                         "confidence": "HIGH",
                         "source": "file",
                         "name": "version",
-                        "value": "8.0.2"
+                        "value": "1.7.1"
                     }
 ,                    {
                         "type": "version",
                         "confidence": "HIGHEST",
                         "source": "pom",
                         "name": "version",
-                        "value": "8.0.2"
+                        "value": "1.7.1"
                     }
                 ]
             }
                 ,"packages": [
                     {
-                        "id": "pkg:maven\/com.itextpdf\/layout@8.0.2"
+                        "id": "pkg:maven\/dev.samstevens.totp\/totp@1.7.1"
 ,"confidence": "HIGH"                    }
             ]                ,"vulnerabilityIds": [
                 {
-                    "id": "cpe:2.3:a:itextpdf:itext:8.0.2:*:*:*:*:*:*:*"
-,"confidence": "HIGHEST","url": "https:\/\/nvd.nist.gov\/vuln\/search#\/nvd\/home?sortOrder=3&sortDirection=2&cpeFilterMode=applicability&resultType=records&cpeName=cpe%3A2.3%3Aa%3Aitextpdf%3Aitext%3A8.0.2%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A%3A%2A"                }
+                    "id": "cpe:2.3:a:time_project:time:1.7.1:*:*:*:*:*:*:*"
+,"confidence": "LOW"                }
             ]
-            ,"vulnerabilities": [
- {
-                "source": "NVD",
-                "name": "CVE-2023-6298",
-                    "severity" : "MEDIUM",
-                    "cvssv2": {
-                        "score": 5.0
-                        ,"accessVector": "NETWORK"
-                        ,"accessComplexity": "LOW"
-                        ,"authenticationr": "NONE"
-                        ,"confidentialityImpact": "NONE"
-                        ,"integrityImpact": "NONE"
-                        ,"availabilityImpact": "PARTIAL"
-                        ,"severity": "MEDIUM"
-,"version": "2.0","exploitabilityScore": "10.0","impactScore": "2.9"                    },
-                    "cvssv3": {
-                        "baseScore": 6.5
-                        ,"attackVector": "NETWORK"
-                        ,"attackComplexity": "LOW"
-                        ,"privilegesRequired": "NONE"
-                        ,"userInteraction": "REQUIRED"
-                        ,"scope": "UNCHANGED"
-                        ,"confidentialityImpact": "NONE"
-                        ,"integrityImpact": "NONE"
-                        ,"availabilityImpact": "HIGH"
-                        ,"baseSeverity": "MEDIUM"
-,"exploitabilityScore": "2.8","impactScore": "3.6","version": "3.1"                    },
-                    "cwes": [
-                        "CWE-129",                        "NVD-CWE-noinfo"                    ],
-                "description": "A vulnerability classified as problematic was found in Apryse iText 8.0.2. This vulnerability affects the function main of the file PdfDocument.java. The manipulation leads to improper validation of array index. The attack can be initiated remotely. The exploit has been disclosed to the public and may be used. The real existence of this vulnerability is still doubted at the moment. The identifier of this vulnerability is VDB-246124. NOTE: The vendor was contacted early about this disclosure but did not respond in any way. A statement published afterwards explains that the exception is not a vulnerability and the identified CWEs might not apply to the software.",
-                "notes": "",
-                "references": [
- {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/drive.google.com\/drive\/folders\/1OBAeGH_rNfa1os6g6QlIt4pL-2NKHZm_?usp=sharing","name": "EXPLOIT,THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/kb.itextpdf.com\/itext\/statement-regarding-cve-2022-24198-and-2023-6298","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/drive.google.com\/drive\/folders\/1OBAeGH_rNfa1os6g6QlIt4pL-2NKHZm_?usp=sharing","name": "EXPLOIT,THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/vuldb.com\/?ctiid.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/vuldb.com\/?id.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/kb.itextpdf.com\/itext\/statement-regarding-cve-2022-24198-and-2023-6298","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "cna@vuldb.com"
-,"url": "https:\/\/vuldb.com\/?id.246124","name": "THIRD_PARTY_ADVISORY"                    }, {
-                        "source": "af854a3a-2127-422b-91ae-364da2661108"
-,"url": "https:\/\/vuldb.com\/?ctiid.246124","name": "THIRD_PARTY_ADVISORY"                    }                ],
-                "vulnerableSoftware": [
- {
-                        "software": { 
-                            "id":"cpe:2.3:a:itextpdf:itext:8.0.2:*:*:*:*:*:*:*"
-,"vulnerabilityIdMatched":"true"                        }
-                    }                ]
-                }            ]        }    ]
+        }    ]
 }

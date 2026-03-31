@@ -1,10 +1,12 @@
 # OpenMRS Dependency Vulnerability Dashboard
 
-A dynamic dashboard that visualizes required dependency updates based on GitLab Dependency Scanning.
+A dynamic dashboard that visualizes dependency vulnerabilities across OpenMRS modules, supporting enriched OWASP Dependency Check reports and advanced data processing.
 
 <div align="center">
-  <img src="dashboard/public/pic 1.png" alt="Dashboard Preview 1" width="45%" />
+  <img src="dashboard/public/pic 1.png" alt="Dashboard Preview" width="60%" />
 </div>
+
+---
 
 ## Setup
 
@@ -51,3 +53,4 @@ dashboard/
 To pull live data rather than use local fallbacks:
 1. Create a `.env` file in the `dashboard` directory mapping `GITHUB_TOKEN=your_token`.
 2. Execute `npm run fetch-data`.
+
